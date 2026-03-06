@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "item": "vanillamusicdiscs:aria_math_music_disc"
+    },
+    "title": "Your first music disc!",
+    "description": "Let the party begin!",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "vanillamusicdiscs:vanillamusicdiscs",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "minecraft:music_discs"
+          }
+        ]
+      }
+    }
+  }
+}

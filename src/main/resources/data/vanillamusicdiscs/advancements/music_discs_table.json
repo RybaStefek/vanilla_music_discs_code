@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "item": "vanillamusicdiscs:music_discs_table"
+    },
+    "title": "Vanilla Music Discs",
+    "description": "Let's craft some music discs!",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "vanillamusicdiscs:first_music_disc",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "vanillamusicdiscs:music_discs_table"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

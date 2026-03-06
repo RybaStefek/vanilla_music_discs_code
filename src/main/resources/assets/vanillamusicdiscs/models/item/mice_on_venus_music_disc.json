@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "vanillamusicdiscs:item/mice_on_venus_music_disc"
+  }
+}

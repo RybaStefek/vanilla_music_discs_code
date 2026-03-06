@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "vanillamusicdiscs:item/aria_math_music_disc"
+  }
+}

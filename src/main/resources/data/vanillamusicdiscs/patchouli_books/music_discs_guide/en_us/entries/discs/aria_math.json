@@ -1,0 +1,19 @@
+{
+  "name": "Aria Math",
+  "category": "vanillamusicdiscs:discs",
+  "icon": "vanillamusicdiscs:aria_math_music_disc",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "vanillamusicdiscs:aria_math_music_disc",
+      "text": "Craft Aria Math using the $(bold)Music Discs Table$(). Place any vanilla music disc in the left slot and the material shown below in the middle slot."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:diamond",
+      "title": "Required Material",
+      "text": "$(item)Diamond$() $(#808080)Place it in the middle slot of the Music Discs Table alongside any vanilla music disc.$()"
+    }
+  ]
+}

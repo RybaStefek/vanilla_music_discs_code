@@ -1,0 +1,190 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 5,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "vanillamusicdiscs:aerie_music_disc",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "vanillamusicdiscs:ancestry_music_disc",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "vanillamusicdiscs:aria_math_music_disc",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "vanillamusicdiscs:axolotl_music_disc",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "vanillamusicdiscs:beginning_music_disc",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "vanillamusicdiscs:chris_music_disc",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "vanillamusicdiscs:chrysopoeia_music_disc",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "vanillamusicdiscs:clark_music_disc",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "vanillamusicdiscs:danny_music_disc",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "vanillamusicdiscs:death_music_disc",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "vanillamusicdiscs:dog_music_disc",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "vanillamusicdiscs:door_music_disc",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "vanillamusicdiscs:dreiton_music_disc",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "vanillamusicdiscs:droopy_likes_your_face_music_disc",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "vanillamusicdiscs:droopy_likes_ricochet_music_disc",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "vanillamusicdiscs:dry_hands_music_disc",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "vanillamusicdiscs:excuse_music_disc",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "vanillamusicdiscs:firebugs_music_disc",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "vanillamusicdiscs:floating_dream_music_disc",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "vanillamusicdiscs:haggstrom_music_disc",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "vanillamusicdiscs:infinite_amethyst_music_disc",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "vanillamusicdiscs:key_music_disc",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "vanillamusicdiscs:labyrinthine_music_disc",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "vanillamusicdiscs:left_to_bloom_music_disc",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "vanillamusicdiscs:living_mice_music_disc",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "vanillamusicdiscs:mice_on_venus_music_disc",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "vanillamusicdiscs:minecraft_music_disc",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "vanillamusicdiscs:moog_city_music_disc",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "vanillamusicdiscs:one_more_day_music_disc",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "vanillamusicdiscs:rubedo_music_disc",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "vanillamusicdiscs:so_below_music_disc",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "vanillamusicdiscs:subwoofer_lullaby_music_disc",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "vanillamusicdiscs:sweden_music_disc",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "vanillamusicdiscs:thirteen_music_disc",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "vanillamusicdiscs:wending_music_disc",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "vanillamusicdiscs:wet_hands_music_disc",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

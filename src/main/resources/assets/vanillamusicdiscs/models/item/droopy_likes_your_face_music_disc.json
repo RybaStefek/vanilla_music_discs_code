@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "vanillamusicdiscs:item/droopy_likes_your_face_music_disc"
+  }
+}

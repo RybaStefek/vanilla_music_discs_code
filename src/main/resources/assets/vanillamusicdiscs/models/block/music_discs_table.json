@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "particle": "vanillamusicdiscs:block/music_discs_table_side",
+    "down": "vanillamusicdiscs:block/music_discs_table_bottom",
+    "up": "vanillamusicdiscs:block/music_discs_table_top",
+    "north": "vanillamusicdiscs:block/music_discs_table_side",
+    "south": "vanillamusicdiscs:block/music_discs_table_side",
+    "west": "vanillamusicdiscs:block/music_discs_table_side",
+    "east": "vanillamusicdiscs:block/music_discs_table_side"
+  }
+}

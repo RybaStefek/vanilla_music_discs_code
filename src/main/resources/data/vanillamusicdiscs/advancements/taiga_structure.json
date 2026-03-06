@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:spruce_log"
+    },
+    "title": "Sound of taiga",
+    "description": "Find the Musical House in taiga biome",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "vanillamusicdiscs:vanillamusicdiscs",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "location": {
+          "feature": "vanillamusicdiscs:musical_house_taiga"
+        }
+      }
+    }
+  }
+}

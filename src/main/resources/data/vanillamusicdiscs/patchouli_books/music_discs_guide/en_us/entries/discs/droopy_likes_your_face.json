@@ -1,0 +1,19 @@
+{
+  "name": "Droopy Likes Your Face",
+  "category": "vanillamusicdiscs:discs",
+  "icon": "vanillamusicdiscs:droopy_likes_your_face_music_disc",
+  "sortnum": 14,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "vanillamusicdiscs:droopy_likes_your_face_music_disc",
+      "text": "Craft Droopy Likes Your Face using the $(bold)Music Discs Table$(). Place any vanilla music disc in the left slot and the material shown below in the middle slot."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:yellow_dye",
+      "title": "Required Material",
+      "text": "$(item)Yellow Dye$() $(#808080)Place it in the middle slot of the Music Discs Table alongside any vanilla music disc.$()"
+    }
+  ]
+}

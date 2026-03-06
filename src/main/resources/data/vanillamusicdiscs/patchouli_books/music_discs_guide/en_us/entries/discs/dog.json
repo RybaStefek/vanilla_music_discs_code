@@ -1,0 +1,19 @@
+{
+  "name": "Dog",
+  "category": "vanillamusicdiscs:discs",
+  "icon": "vanillamusicdiscs:dog_music_disc",
+  "sortnum": 10,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "vanillamusicdiscs:dog_music_disc",
+      "text": "Craft Dog using the $(bold)Music Discs Table$(). Place any vanilla music disc in the left slot and the material shown below in the middle slot."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:bone",
+      "title": "Required Material",
+      "text": "$(item)Bone$() $(#808080)Place it in the middle slot of the Music Discs Table alongside any vanilla music disc.$()"
+    }
+  ]
+}

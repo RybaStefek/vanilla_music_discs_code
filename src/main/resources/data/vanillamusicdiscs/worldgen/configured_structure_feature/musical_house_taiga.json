@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:village",
+  "config": {
+    "start_pool": "vanillamusicdiscs:musical_house_taiga/start_pool",
+    "size": 1
+  },
+  "biomes": "#vanillamusicdiscs:has_structure/musical_house_taiga",
+  "adapt_noise": true,
+  "spawn_overrides": {}
+}

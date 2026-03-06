@@ -1,0 +1,19 @@
+{
+  "name": "One More Day",
+  "category": "vanillamusicdiscs:discs",
+  "icon": "vanillamusicdiscs:one_more_day_music_disc",
+  "sortnum": 28,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "vanillamusicdiscs:one_more_day_music_disc",
+      "text": "Craft One More Day using the $(bold)Music Discs Table$(). Place any vanilla music disc in the left slot and the material shown below in the middle slot."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:sunflower",
+      "title": "Required Material",
+      "text": "$(item)Sunflower$() $(#808080)Place it in the middle slot of the Music Discs Table alongside any vanilla music disc.$()"
+    }
+  ]
+}

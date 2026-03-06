@@ -1,0 +1,1 @@
+give @s patchouli:guide_book{"patchouli:book":"vanillamusicdiscs:music_discs_guide"}

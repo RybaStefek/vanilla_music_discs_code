@@ -1,0 +1,284 @@
+{
+  "aerie": {
+    "sounds": [
+      {
+        "name": "vanillamusicdiscs:aerie",
+        "stream": true
+      }
+    ]
+  },
+  "ancestry": {
+    "sounds": [
+      {
+        "name": "vanillamusicdiscs:ancestry",
+        "stream": true
+      }
+    ]
+  },
+
+  "axolotl": {
+    "sounds": [
+      {
+        "name": "vanillamusicdiscs:axolotl",
+        "stream": true
+      }
+    ]
+  },
+  "aria_math": {
+    "sounds": [
+      {
+        "name": "vanillamusicdiscs:aria_math",
+        "stream": true
+      }
+    ]
+  },
+  "chris": {
+    "sounds": [
+      {
+        "name": "vanillamusicdiscs:chris",
+        "stream": true
+      }
+    ]
+  },
+  "chrysopoeia": {
+    "sounds": [
+      {
+        "name": "vanillamusicdiscs:chrysopoeia",
+        "stream": true
+      }
+    ]
+  },
+  "clark": {
+    "sounds": [
+      {
+        "name": "vanillamusicdiscs:clark",
+        "stream": true
+      }
+    ]
+  },
+  "danny": {
+    "sounds": [
+      {
+        "name": "vanillamusicdiscs:danny",
+        "stream": true
+      }
+    ]
+  },
+  "death": {
+    "sounds": [
+      {
+        "name": "vanillamusicdiscs:death",
+        "stream": true
+      }
+    ]
+  },
+  "dog": {
+    "sounds": [
+      {
+        "name": "vanillamusicdiscs:dog",
+        "stream": true
+      }
+    ]
+  },
+  "door": {
+    "sounds": [
+      {
+        "name": "vanillamusicdiscs:door",
+        "stream": true
+      }
+    ]
+  },
+  "dreiton": {
+    "sounds": [
+      {
+        "name": "vanillamusicdiscs:dreiton",
+        "stream": true
+      }
+    ]
+  },
+  "droopy_likes_ricochet": {
+    "sounds": [
+      {
+        "name": "vanillamusicdiscs:droopy_likes_ricochet",
+        "stream": true
+      }
+    ]
+  },
+  "droopy_likes_your_face": {
+    "sounds": [
+      {
+        "name": "vanillamusicdiscs:droopy_likes_your_face",
+        "stream": true
+      }
+    ]
+  },
+  "dry_hands": {
+    "sounds": [
+      {
+        "name": "vanillamusicdiscs:dry_hands",
+        "stream": true
+      }
+    ]
+  },
+  "excuse": {
+    "sounds": [
+      {
+        "name": "vanillamusicdiscs:excuse",
+        "stream": true
+      }
+    ]
+  },
+  "firebugs": {
+    "sounds": [
+      {
+        "name": "vanillamusicdiscs:firebugs",
+        "stream": true
+      }
+    ]
+  },
+  "floating_dream": {
+    "sounds": [
+      {
+        "name": "vanillamusicdiscs:floating_dream",
+        "stream": true
+      }
+    ]
+  },
+  "haggstrom": {
+    "sounds": [
+      {
+        "name": "vanillamusicdiscs:haggstrom",
+        "stream": true
+      }
+    ]
+  },
+  "infinite_amethyst": {
+    "sounds": [
+      {
+        "name": "vanillamusicdiscs:infinite_amethyst",
+        "stream": true
+      }
+    ]
+  },
+  "key": {
+    "sounds": [
+      {
+        "name": "vanillamusicdiscs:key",
+        "stream": true
+      }
+    ]
+  },
+  "labyrinthine": {
+    "sounds": [
+      {
+        "name": "vanillamusicdiscs:labyrinthine",
+        "stream": true
+      }
+    ]
+  },
+  "left_to_bloom": {
+    "sounds": [
+      {
+        "name": "vanillamusicdiscs:left_to_bloom",
+        "stream": true
+      }
+    ]
+  },
+  "living_mice": {
+    "sounds": [
+      {
+        "name": "vanillamusicdiscs:living_mice",
+        "stream": true
+      }
+    ]
+  },
+  "mice_on_venus": {
+    "sounds": [
+      {
+        "name": "vanillamusicdiscs:mice_on_venus",
+        "stream": true
+      }
+    ]
+  },
+  "minecraft": {
+    "sounds": [
+      {
+        "name": "vanillamusicdiscs:minecraft",
+        "stream": true
+      }
+    ]
+  },
+  "moog_city": {
+    "sounds": [
+      {
+        "name": "vanillamusicdiscs:moog_city",
+        "stream": true
+      }
+    ]
+  },
+  "one_more_day": {
+    "sounds": [
+      {
+        "name": "vanillamusicdiscs:one_more_day",
+        "stream": true
+      }
+    ]
+  },
+  "rubedo": {
+    "sounds": [
+      {
+        "name": "vanillamusicdiscs:rubedo",
+        "stream": true
+      }
+    ]
+  },
+  "so_below": {
+    "sounds": [
+      {
+        "name": "vanillamusicdiscs:so_below",
+        "stream": true
+      }
+    ]
+  },
+  "subwoofer_lullaby": {
+    "sounds": [
+      {
+        "name": "vanillamusicdiscs:subwoofer_lullaby",
+        "stream": true
+      }
+    ]
+  },
+  "sweden": {
+    "sounds": [
+      {
+        "name": "vanillamusicdiscs:sweden",
+        "stream": true
+      }
+    ]
+  },
+  "thirteen": {
+    "sounds": [
+      {
+        "name": "vanillamusicdiscs:thirteen",
+        "stream": true
+      }
+    ]
+  },
+  "wending": {
+    "sounds": [
+      {
+        "name": "vanillamusicdiscs:wending",
+        "stream": true
+      }
+    ]
+  },
+  "wet_hands": {
+    "sounds": [
+      {
+        "name": "vanillamusicdiscs:wet_hands",
+        "stream": true
+      }
+    ]
+  }
+}
+

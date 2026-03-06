@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "vanillamusicdiscs:musical_house_plains",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 870456637,
+    "spacing": 16,
+    "separation": 8
+  }
+}

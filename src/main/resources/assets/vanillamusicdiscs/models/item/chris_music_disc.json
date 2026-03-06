@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "vanillamusicdiscs:item/chris_music_disc"
+  }
+}

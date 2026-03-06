@@ -1,0 +1,19 @@
+{
+  "name": "Left to Bloom",
+  "category": "vanillamusicdiscs:discs",
+  "icon": "vanillamusicdiscs:left_to_bloom_music_disc",
+  "sortnum": 23,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "vanillamusicdiscs:left_to_bloom_music_disc",
+      "text": "Craft Left to Bloom using the $(bold)Music Discs Table$(). Place any vanilla music disc in the left slot and the material shown below in the middle slot."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:purple_dye",
+      "title": "Required Material",
+      "text": "$(item)Purple Dye$() $(#808080)Place it in the middle slot of the Music Discs Table alongside any vanilla music disc.$()"
+    }
+  ]
+}

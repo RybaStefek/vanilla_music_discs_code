@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "vanillamusicdiscs:item/living_mice_music_disc"
+  }
+}
