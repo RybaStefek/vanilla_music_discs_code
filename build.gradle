@@ -75,9 +75,9 @@ repositories {
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.20.1-47.1.3'
+    minecraft 'net.minecraftforge:forge:1.20.1-47.4.0'
 
-    compileOnly fg.deobf("vazkii.patchouli:Patchouli:1.20.1-84.1-FORGE")
+    implementation fg.deobf("vazkii.patchouli:Patchouli:1.20.1-84-FORGE")
 }
 
 jar {
