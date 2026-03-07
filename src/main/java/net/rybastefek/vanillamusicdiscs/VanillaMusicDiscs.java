@@ -9,6 +9,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.rybastefek.vanillamusicdiscs.block.ModBlocks;
 import net.rybastefek.vanillamusicdiscs.block.entity.ModBlockEntities;
+import net.rybastefek.vanillamusicdiscs.items.ModCreativeTab;
 import net.rybastefek.vanillamusicdiscs.items.ModItems;
 import net.rybastefek.vanillamusicdiscs.screen.ModMenuTypes;
 import net.rybastefek.vanillamusicdiscs.screen.MusicDiscsTableScreen;
@@ -29,6 +30,7 @@ public class VanillaMusicDiscs {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(eventBus);
+        ModCreativeTab.register(eventBus);
         ModBlocks.register(eventBus);
         ModBlockEntities.register(eventBus);
         ModSounds.register(eventBus);
