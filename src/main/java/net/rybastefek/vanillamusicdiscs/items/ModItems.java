@@ -148,10 +148,6 @@ public class ModItems {
             () -> new RecordItem(15, ModSounds.SWEDEN,
                     new Item.Properties().tab(CreativeModeTab.TAB_MISC).stacksTo(1).rarity(Rarity.RARE)));
 
-    public static final RegistryObject<Item> THIRTEEN = ITEMS.register("thirteen_music_disc",
-            () -> new RecordItem(15, ModSounds.THIRTEEN,
-                    new Item.Properties().tab(CreativeModeTab.TAB_MISC).stacksTo(1).rarity(Rarity.RARE)));
-
     public static final RegistryObject<Item> WENDING = ITEMS.register("wending_music_disc",
             () -> new RecordItem(15, ModSounds.WENDING,
                     new Item.Properties().tab(CreativeModeTab.TAB_MISC).stacksTo(1).rarity(Rarity.RARE)));

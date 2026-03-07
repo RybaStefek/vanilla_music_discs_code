@@ -83,7 +83,6 @@ public class MusicDiscsTableBlockEntity extends BlockEntity implements MenuProvi
         RECIPES.put(Items.PINK_BED, ModItems.SO_BELOW.get());
         RECIPES.put(Items.LIME_BED, ModItems.SUBWOOFER_LULLABY.get());
         RECIPES.put(Items.POPPY, ModItems.SWEDEN.get());
-        RECIPES.put(Items.GREEN_DYE, ModItems.THIRTEEN.get());
         RECIPES.put(Items.BOOK, ModItems.WENDING.get());
         RECIPES.put(Items.WET_SPONGE, ModItems.WET_HANDS.get());
     }

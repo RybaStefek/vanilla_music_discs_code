@@ -1,6 +1,6 @@
 {
   "name": "Music Discs",
   "description": "All music discs craftable using the Music Discs Table. Place any vanilla disc in the left slot, the required material in the middle, and wait!",
-  "icon": "minecraft:music_disc_13",
+  "icon": "vanillamusicdiscs:aria_math",
   "sortnum": 0
 }
