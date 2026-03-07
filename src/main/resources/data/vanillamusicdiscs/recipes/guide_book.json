@@ -10,6 +10,6 @@
   ],
   "result": {
     "item": "patchouli:guide_book",
-    "nbt": "{\"patchouli:book\":\"vanillamusicdiscs:music_discs_guide\"}"
+    "nbt": "{patchouli:book:\"vanillamusicdiscs:music_discs_guide\"}"
   }
 }

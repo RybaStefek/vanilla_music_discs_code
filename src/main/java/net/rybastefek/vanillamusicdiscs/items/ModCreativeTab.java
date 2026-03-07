@@ -1,5 +1,7 @@
 package net.rybastefek.vanillamusicdiscs.items;
 
+import net.minecraft.resources.ResourceLocation;
+import vazkii.patchouli.api.PatchouliAPI;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -55,6 +57,9 @@ public class ModCreativeTab {
                                 output.accept(ModItems.SWEDEN.get());
                                 output.accept(ModItems.WENDING.get());
                                 output.accept(ModItems.WET_HANDS.get());
+                                output.accept(PatchouliAPI.get().getBookStack(
+                                        ResourceLocation.fromNamespaceAndPath("vanillamusicdiscs", "music_discs_guide")
+                                ));
                             })
                             .build());
 
