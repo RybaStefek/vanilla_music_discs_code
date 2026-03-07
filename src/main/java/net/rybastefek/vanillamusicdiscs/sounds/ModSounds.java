@@ -50,7 +50,7 @@ public class ModSounds {
     public static final RegistryObject<SoundEvent> WET_HANDS = registerSoundEvent("wet_hands");
 
     private static RegistryObject<SoundEvent> registerSoundEvent(String name) {
-        return SOUND_EVENTS.register(name, () -> new SoundEvent(new ResourceLocation(VanillaMusicDiscs.MOD_ID, name)));
+        return SOUND_EVENTS.register(name, () -> SoundEvent.createVariableRangeEvent(new ResourceLocation(VanillaMusicDiscs.MOD_ID, name)));
     }
 
     public static void register(IEventBus eventBus) {
