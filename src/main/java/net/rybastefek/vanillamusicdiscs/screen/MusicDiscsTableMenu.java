@@ -6,7 +6,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.*;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
-import net.minecraftforge.items.CapabilityItemHandler;
+import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.rybastefek.vanillamusicdiscs.block.ModBlocks;
 import net.rybastefek.vanillamusicdiscs.block.entity.custom.MusicDiscsTableBlockEntity;
 import net.rybastefek.vanillamusicdiscs.screen.slot.MaterialInputSlot;
@@ -19,22 +19,21 @@ public class MusicDiscsTableMenu extends AbstractContainerMenu {
     private final ContainerData data;
 
     public MusicDiscsTableMenu(int pContainerId, Inventory inv, FriendlyByteBuf extraData) {
-        this(pContainerId, inv, (MusicDiscsTableBlockEntity) inv.player.level.getBlockEntity(extraData.readBlockPos()));
+        this(pContainerId, inv, (MusicDiscsTableBlockEntity) inv.player.level().getBlockEntity(extraData.readBlockPos()));
     }
 
     public MusicDiscsTableMenu(int pContainerId, Inventory inv, MusicDiscsTableBlockEntity entity, ContainerData data) {
         super(ModMenuTypes.MUSIC_DISCS_TABLE_MENU.get(), pContainerId);
         checkContainerSize(inv, 3);
         blockEntity = entity;
-        this.level = inv.player.level;
+        this.level = inv.player.level();
         this.data = data;
 
         addDataSlots(this.data);
-
         addPlayerInventory(inv);
         addPlayerHotbar(inv);
 
-        this.blockEntity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY).ifPresent(handler -> {
+        this.blockEntity.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(handler -> {
             this.addSlot(new MusicDiscInputSlot(handler, 0, 57, 18));
             this.addSlot(new MaterialInputSlot(handler, 1, 103, 18));
             this.addSlot(new ModResultSlot(handler, 2, 80, 60));
@@ -45,18 +44,17 @@ public class MusicDiscsTableMenu extends AbstractContainerMenu {
         super(ModMenuTypes.MUSIC_DISCS_TABLE_MENU.get(), pContainerId);
         checkContainerSize(inv, 3);
         blockEntity = entity;
-        this.level = inv.player.level;
+        this.level = inv.player.level();
         this.data = new SimpleContainerData(2);
 
         addDataSlots(this.data);
-
         addPlayerInventory(inv);
         addPlayerHotbar(inv);
 
-        this.blockEntity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY).ifPresent(handler -> {
-            this.addSlot(new MusicDiscInputSlot(handler, 0, 57, 18));  // Slot 0
-            this.addSlot(new MaterialInputSlot(handler, 1, 103, 18));  // Slot 1
-            this.addSlot(new ModResultSlot(handler, 2, 80, 60));  // Slot 2 (Output)
+        this.blockEntity.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(handler -> {
+            this.addSlot(new MusicDiscInputSlot(handler, 0, 57, 18));
+            this.addSlot(new MaterialInputSlot(handler, 1, 103, 18));
+            this.addSlot(new ModResultSlot(handler, 2, 80, 60));
         });
     }
 
@@ -67,7 +65,6 @@ public class MusicDiscsTableMenu extends AbstractContainerMenu {
     private static final int VANILLA_SLOT_COUNT = HOTBAR_SLOT_COUNT + PLAYER_INVENTORY_SLOT_COUNT;
     private static final int VANILLA_FIRST_SLOT_INDEX = 0;
     private static final int TE_INVENTORY_FIRST_SLOT_INDEX = VANILLA_FIRST_SLOT_INDEX + VANILLA_SLOT_COUNT;
-
     private static final int TE_INVENTORY_SLOT_COUNT = 3;
 
     @Override
@@ -87,7 +84,6 @@ public class MusicDiscsTableMenu extends AbstractContainerMenu {
                 return ItemStack.EMPTY;
             }
         } else {
-            System.out.println("Invalid slotIndex:" + index);
             return ItemStack.EMPTY;
         }
 
@@ -119,6 +115,7 @@ public class MusicDiscsTableMenu extends AbstractContainerMenu {
             this.addSlot(new Slot(playerInventory, i, 8 + i * 18, 144));
         }
     }
+
     public int getProgress() {
         return this.data.get(0);
     }

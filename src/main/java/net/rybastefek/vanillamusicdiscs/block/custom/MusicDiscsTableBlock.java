@@ -44,8 +44,8 @@ public class MusicDiscsTableBlock extends BaseEntityBlock {
                                  Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
         if (!pLevel.isClientSide()) {
             BlockEntity entity = pLevel.getBlockEntity(pPos);
-            if(entity instanceof MusicDiscsTableBlockEntity) {
-                NetworkHooks.openGui(((ServerPlayer)pPlayer), (MusicDiscsTableBlockEntity)entity, pPos);
+            if (entity instanceof MusicDiscsTableBlockEntity) {
+                NetworkHooks.openScreen((ServerPlayer) pPlayer, (MusicDiscsTableBlockEntity) entity, pPos);
             } else {
                 throw new IllegalStateException("Our Container provider is missing!");
             }

@@ -4,7 +4,6 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.world.Containers;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.SimpleContainer;
@@ -20,8 +19,8 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.common.capabilities.Capability;
+import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.common.util.LazyOptional;
-import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 import net.rybastefek.vanillamusicdiscs.block.entity.ModBlockEntities;
@@ -44,12 +43,11 @@ public class MusicDiscsTableBlockEntity extends BlockEntity implements MenuProvi
     private LazyOptional<IItemHandler> lazyItemHandler = LazyOptional.empty();
 
     private int progress = 0;
-    private int maxProgress = 78; // ~4 seconds (78 ticks)
+    private int maxProgress = 78;
 
     private static final Map<Item, Item> RECIPES = new HashMap<>();
 
     static {
-        // RECIPES.put(material, output item);
         RECIPES.put(Items.ORANGE_DYE, ModItems.AERIE.get());
         RECIPES.put(Items.ORANGE_WOOL, ModItems.ANCESTRY.get());
         RECIPES.put(Items.DIAMOND, ModItems.ARIA_MATH.get());
@@ -117,7 +115,7 @@ public class MusicDiscsTableBlockEntity extends BlockEntity implements MenuProvi
 
     @Override
     public Component getDisplayName() {
-        return new TextComponent("Music Discs Table");
+        return Component.literal("Music Discs Table");
     }
 
     @Nullable
@@ -128,7 +126,7 @@ public class MusicDiscsTableBlockEntity extends BlockEntity implements MenuProvi
 
     @Override
     public @NotNull <T> LazyOptional<T> getCapability(@NotNull Capability<T> cap, @Nullable Direction side) {
-        if (cap == CapabilityItemHandler.ITEM_HANDLER_CAPABILITY) {
+        if (cap == ForgeCapabilities.ITEM_HANDLER) {
             return lazyItemHandler.cast();
         }
         return super.getCapability(cap, side);
@@ -153,7 +151,6 @@ public class MusicDiscsTableBlockEntity extends BlockEntity implements MenuProvi
         super.saveAdditional(nbt);
     }
 
-
     @Override
     public void load(CompoundTag nbt) {
         super.load(nbt);
@@ -166,14 +163,12 @@ public class MusicDiscsTableBlockEntity extends BlockEntity implements MenuProvi
         for (int i = 0; i < itemHandler.getSlots(); i++) {
             inventory.setItem(i, itemHandler.getStackInSlot(i));
         }
-
         Containers.dropContents(this.level, this.worldPosition, inventory);
     }
 
-
     public static void tick(Level level, BlockPos pos, BlockState state, MusicDiscsTableBlockEntity blockEntity) {
         if (level.isClientSide()) {
-            return; // Only server-side
+            return;
         }
 
         if (blockEntity.hasRecipe()) {
@@ -195,41 +190,30 @@ public class MusicDiscsTableBlockEntity extends BlockEntity implements MenuProvi
         ItemStack material = this.itemHandler.getStackInSlot(1);
         ItemStack output = this.itemHandler.getStackInSlot(2);
 
-        if(disc.isEmpty() || material.isEmpty()) {
+        if (disc.isEmpty() || material.isEmpty()) {
             return false;
         }
-
-        if(!(disc.getItem() instanceof RecordItem)) {
+        if (!(disc.getItem() instanceof RecordItem)) {
             return false;
         }
-
-        if(!RECIPES.containsKey(material.getItem())) {
+        if (!RECIPES.containsKey(material.getItem())) {
             return false;
         }
-
-        if(!output.isEmpty()) {
+        if (!output.isEmpty()) {
             return false;
         }
-
         return true;
     }
 
     private void craftItem() {
-        ItemStack disc = this.itemHandler.getStackInSlot(0);
         ItemStack material = this.itemHandler.getStackInSlot(1);
         ItemStack output = this.itemHandler.getStackInSlot(2);
 
         Item resultItem = RECIPES.get(material.getItem());
         if (resultItem == null) return;
+        if (!output.isEmpty()) return;
 
-        ItemStack result = new ItemStack(resultItem, 1);
-
-        if (!output.isEmpty()) {
-            return;
-        }
-
-        this.itemHandler.setStackInSlot(2, result);
-
+        this.itemHandler.setStackInSlot(2, new ItemStack(resultItem, 1));
         this.itemHandler.extractItem(0, 1, false);
         this.itemHandler.extractItem(1, 1, false);
     }
