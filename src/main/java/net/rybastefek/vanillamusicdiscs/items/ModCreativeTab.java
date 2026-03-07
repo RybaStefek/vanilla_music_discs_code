@@ -58,7 +58,7 @@ public class ModCreativeTab {
                                 output.accept(ModItems.WENDING.get());
                                 output.accept(ModItems.WET_HANDS.get());
                                 output.accept(PatchouliAPI.get().getBookStack(
-                                        ResourceLocation.fromNamespaceAndPath("vanillamusicdiscs", "music_discs_guide")
+                                        new ResourceLocation("vanillamusicdiscs", "music_discs_guide")
                                 ));
                             })
                             .build());
