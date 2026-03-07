@@ -1,0 +1,19 @@
+{
+  "name": "Labyrinthine",
+  "category": "vanillamusicdiscs:discs",
+  "icon": "vanillamusicdiscs:labyrinthine_music_disc",
+  "sortnum": 22,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "vanillamusicdiscs:labyrinthine_music_disc",
+      "text": "Craft Labyrinthine using the $(bold)Music Discs Table$(). Place any vanilla music disc in the left slot and the material shown below in the middle slot."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:orange_carpet",
+      "title": "Required Material",
+      "text": "$(item)Orange Carpet$() $(#808080)Place it in the middle slot of the Music Discs Table alongside any vanilla music disc.$()"
+    }
+  ]
+}

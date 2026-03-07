@@ -1,0 +1,19 @@
+{
+  "name": "Haggstrom",
+  "category": "vanillamusicdiscs:discs",
+  "icon": "vanillamusicdiscs:haggstrom_music_disc",
+  "sortnum": 19,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "vanillamusicdiscs:haggstrom_music_disc",
+      "text": "Craft Haggstrom using the $(bold)Music Discs Table$(). Place any vanilla music disc in the left slot and the material shown below in the middle slot."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:brown_bed",
+      "title": "Required Material",
+      "text": "$(item)Brown Bed$() $(#808080)Place it in the middle slot of the Music Discs Table alongside any vanilla music disc.$()"
+    }
+  ]
+}

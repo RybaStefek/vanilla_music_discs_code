@@ -1,0 +1,19 @@
+{
+  "name": "Chrysopoeia",
+  "category": "vanillamusicdiscs:discs",
+  "icon": "vanillamusicdiscs:chrysopoeia_music_disc",
+  "sortnum": 6,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "vanillamusicdiscs:chrysopoeia_music_disc",
+      "text": "Craft Chrysopoeia using the $(bold)Music Discs Table$(). Place any vanilla music disc in the left slot and the material shown below in the middle slot."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:pink_tulip",
+      "title": "Required Material",
+      "text": "$(item)Pink Tulip$() $(#808080)Place it in the middle slot of the Music Discs Table alongside any vanilla music disc.$()"
+    }
+  ]
+}
