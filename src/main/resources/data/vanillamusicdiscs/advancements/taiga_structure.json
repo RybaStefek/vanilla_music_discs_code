@@ -14,11 +14,17 @@
     "requirement": {
       "trigger": "minecraft:location",
       "conditions": {
-        "player": {
-          "location": {
-            "structures": "vanillamusicdiscs:musical_house_taiga"
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structure": "vanillamusicdiscs:musical_house_taiga"
+              }
+            }
           }
-        }
+        ]
       }
     }
   }
