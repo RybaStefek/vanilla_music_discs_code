@@ -71,5 +71,8 @@
   "item.vanillamusicdiscs.wending_music_disc.desc": "Lena Raine - Wending",
   "item.vanillamusicdiscs.wet_hands_music_disc": "Wet Hands Music Disc",
   "item.vanillamusicdiscs.wet_hands_music_disc.desc": "C418 - Wet Hands",
-  "block.vanillamusicdiscs.music_discs_table": "Music Discs Table"
+
+  "block.vanillamusicdiscs.music_discs_table": "Music Discs Table",
+
+  "creativetab.vanillamusicdiscs": "Vanilla Music Discs"
 }
