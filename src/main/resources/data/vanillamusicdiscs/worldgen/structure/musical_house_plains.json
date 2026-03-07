@@ -3,12 +3,15 @@
   "start_pool": "vanillamusicdiscs:musical_house_plains/start_pool",
   "size": 1,
   "start_height": {
-    "type": "minecraft:uniform",
-    "min_inclusive": {"absolute": 0},
-    "max_inclusive": {"absolute": 0}
+    "type": "minecraft:constant",
+    "value": {
+      "absolute": 0
+    }
   },
+  "project_start_to_heightmap": "WORLD_SURFACE_WG",
   "max_distance_from_center": 80,
   "use_expansion_hack": false,
+  "terrain_adaptation": "beard_thin",
   "biomes": "#vanillamusicdiscs:has_structure/musical_house_plains",
   "step": "surface_structures",
   "spawn_overrides": {}

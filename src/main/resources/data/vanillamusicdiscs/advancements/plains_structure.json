@@ -14,8 +14,10 @@
     "requirement": {
       "trigger": "minecraft:location",
       "conditions": {
-        "location": {
-          "feature": "vanillamusicdiscs:musical_house_plains"
+        "player": {
+          "location": {
+            "structures": "vanillamusicdiscs:musical_house_plains"
+          }
         }
       }
     }
