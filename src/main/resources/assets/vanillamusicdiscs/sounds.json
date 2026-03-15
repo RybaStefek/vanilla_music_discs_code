@@ -256,14 +256,6 @@
       }
     ]
   },
-  "thirteen": {
-    "sounds": [
-      {
-        "name": "vanillamusicdiscs:thirteen",
-        "stream": true
-      }
-    ]
-  },
   "wending": {
     "sounds": [
       {
