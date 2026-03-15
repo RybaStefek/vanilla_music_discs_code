@@ -15,7 +15,7 @@ apply plugin: 'org.spongepowered.mixin'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '2.0-1.20.1'
+version = '2.0.1-1.20.1'
 group = 'net.rybastefek.vanillamusicdiscs'
 archivesBaseName = 'vanillamusicdiscs'
 
@@ -78,7 +78,7 @@ jar {
         attributes([
                 "Specification-Title"     : "vanillamusicdiscs",
                 "Specification-Vendor"    : "vanillamusicdiscssareus",
-                "Specification-Version"   : "2.0",
+                "Specification-Version"   : "2.0.1",
                 "Implementation-Title"    : project.name,
                 "Implementation-Version"  : project.jar.archiveVersion,
                 "Implementation-Vendor"   : "vanillamusicdiscssareus",

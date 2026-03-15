@@ -1,6 +1,9 @@
 package net.rybastefek.vanillamusicdiscs.items;
 
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.entity.EntityType;
+import net.rybastefek.vanillamusicdiscs.block.ModBlocks;
+import net.rybastefek.vanillamusicdiscs.block.entity.ModBlockEntities;
 import vazkii.patchouli.api.PatchouliAPI;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -20,7 +23,7 @@ public class ModCreativeTab {
                     () -> CreativeModeTab.builder()
                             .title(Component.translatable("creativetab.vanillamusicdiscs"))
                             .withTabsBefore(CreativeModeTabs.COMBAT)
-                            .icon(() -> ModItems.SWEDEN.get().getDefaultInstance())
+                            .icon(() -> ModItems.MINECRAFT.get().getDefaultInstance())
                             .displayItems((parameters, output) -> {
                                 output.accept(ModItems.AERIE.get());
                                 output.accept(ModItems.ANCESTRY.get());
@@ -60,6 +63,7 @@ public class ModCreativeTab {
                                 output.accept(PatchouliAPI.get().getBookStack(
                                         new ResourceLocation("vanillamusicdiscs", "music_discs_guide")
                                 ));
+                                output.accept(ModBlocks.MUSIC_DISCS_TABLE.get());
                             })
                             .build());
 
