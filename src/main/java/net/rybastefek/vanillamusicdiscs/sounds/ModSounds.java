@@ -45,7 +45,6 @@ public class ModSounds {
     public static final RegistryObject<SoundEvent> SO_BELOW = registerSoundEvent("so_below");
     public static final RegistryObject<SoundEvent> SUBWOOFER_LULLABY = registerSoundEvent("subwoofer_lullaby");
     public static final RegistryObject<SoundEvent> SWEDEN = registerSoundEvent("sweden");
-    public static final RegistryObject<SoundEvent> THIRTEEN = registerSoundEvent("thirteen");
     public static final RegistryObject<SoundEvent> WENDING = registerSoundEvent("wending");
     public static final RegistryObject<SoundEvent> WET_HANDS = registerSoundEvent("wet_hands");
 
