@@ -13,7 +13,7 @@
       "type": "patchouli:spotlight",
       "item": "minecraft:gray_wool",
       "title": "Required Material",
-      "text": "$(item)Gray Wool$() $(#808080)Place it in the middle slot of the Music Discs Table alongside any vanilla music disc.$()"
+      "text": "$(item)Gray Wool$() $(#808080)$()Place it in the middle slot of the Music Discs Table alongside any vanilla music disc.$()"
     }
   ]
 }

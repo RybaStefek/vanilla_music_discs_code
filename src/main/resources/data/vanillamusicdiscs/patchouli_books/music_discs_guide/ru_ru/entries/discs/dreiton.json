@@ -1,0 +1,19 @@
+{
+  "name": "Dreiton",
+  "category": "vanillamusicdiscs:discs",
+  "icon": "vanillamusicdiscs:dreiton_music_disc",
+  "sortnum": 12,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "vanillamusicdiscs:dreiton_music_disc",
+      "text": "Сделайте «Dreiton» с помощью $(bold)стола для пластинок$(). Поместите любую стандартную пластинку в левую ячейку, а материал, указанный далее, в среднюю ячейку."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:orange_bed",
+      "title": "Необходимый материал",
+      "text": "Поместите $(item)оранжевую кровать$() $(#808080)$()в среднюю ячейку стола для пластинок вместе с любой стандартной пластинкой."
+    }
+  ]
+}

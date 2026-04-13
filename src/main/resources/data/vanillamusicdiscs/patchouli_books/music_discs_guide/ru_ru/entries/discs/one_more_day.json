@@ -1,0 +1,19 @@
+{
+  "name": "One More Day",
+  "category": "vanillamusicdiscs:discs",
+  "icon": "vanillamusicdiscs:one_more_day_music_disc",
+  "sortnum": 28,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "vanillamusicdiscs:one_more_day_music_disc",
+      "text": "Сделайте «One More Day» с помощью $(bold)стола для пластинок$(). Поместите любую стандартную пластинку в левую ячейку, а материал, указанный далее, в среднюю ячейку."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:sunflower",
+      "title": "Необходимый материал",
+      "text": "Поместите $(item)подсолнух$() $(#808080)$()в среднюю ячейку стола для пластинок вместе с любой стандартной пластинкой."
+    }
+  ]
+}

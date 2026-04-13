@@ -1,0 +1,19 @@
+{
+  "name": "Living Mice",
+  "category": "vanillamusicdiscs:discs",
+  "icon": "vanillamusicdiscs:living_mice_music_disc",
+  "sortnum": 24,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "vanillamusicdiscs:living_mice_music_disc",
+      "text": "Сделайте «Living Mice» с помощью $(bold)стола для пластинок$(). Поместите любую стандартную пластинку в левую ячейку, а материал, указанный далее, в среднюю ячейку."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:gray_wool",
+      "title": "Необходимый материал",
+      "text": "Поместите $(item)серую шерсть$() $(#808080)$()в среднюю ячейку стола для пластинок вместе с любой стандартной пластинкой."
+    }
+  ]
+}

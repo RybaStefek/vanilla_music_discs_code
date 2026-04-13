@@ -13,7 +13,7 @@
       "type": "patchouli:spotlight",
       "item": "minecraft:yellow_dye",
       "title": "Required Material",
-      "text": "$(item)Yellow Dye$() $(#808080)Place it in the middle slot of the Music Discs Table alongside any vanilla music disc.$()"
+      "text": "$(item)Yellow Dye$() $(#808080)$()Place it in the middle slot of the Music Discs Table alongside any vanilla music disc.$()"
     }
   ]
 }

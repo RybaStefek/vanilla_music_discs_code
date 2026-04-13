@@ -1,0 +1,19 @@
+{
+  "name": "Droopy Likes Your Face",
+  "category": "vanillamusicdiscs:discs",
+  "icon": "vanillamusicdiscs:droopy_likes_your_face_music_disc",
+  "sortnum": 14,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "vanillamusicdiscs:droopy_likes_your_face_music_disc",
+      "text": "Сделайте «Droopy Likes Your Face» с помощью $(bold)стола для пластинок$(). Поместите любую стандартную пластинку в левую ячейку, а материал, указанный далее, в среднюю ячейку."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:yellow_dye",
+      "title": "Необходимый материал",
+      "text": "Поместите $(item)жёлтый краситель$() $(#808080)$()в среднюю ячейку стола для пластинок вместе с любой стандартной пластинкой."
+    }
+  ]
+}

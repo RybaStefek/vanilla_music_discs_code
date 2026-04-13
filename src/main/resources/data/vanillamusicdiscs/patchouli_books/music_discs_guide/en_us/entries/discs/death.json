@@ -13,7 +13,7 @@
       "type": "patchouli:spotlight",
       "item": "minecraft:black_candle",
       "title": "Required Material",
-      "text": "$(item)Black Candle$() $(#808080)Place it in the middle slot of the Music Discs Table alongside any vanilla music disc.$()"
+      "text": "$(item)Black Candle$() $(#808080)$()Place it in the middle slot of the Music Discs Table alongside any vanilla music disc.$()"
     }
   ]
 }

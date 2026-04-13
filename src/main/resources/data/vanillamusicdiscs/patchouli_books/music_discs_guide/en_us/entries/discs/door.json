@@ -13,7 +13,7 @@
       "type": "patchouli:spotlight",
       "item": "minecraft:oak_door",
       "title": "Required Material",
-      "text": "$(item)Oak Door$() $(#808080)Place it in the middle slot of the Music Discs Table alongside any vanilla music disc.$()"
+      "text": "$(item)Oak Door$() $(#808080)$()Place it in the middle slot of the Music Discs Table alongside any vanilla music disc.$()"
     }
   ]
 }

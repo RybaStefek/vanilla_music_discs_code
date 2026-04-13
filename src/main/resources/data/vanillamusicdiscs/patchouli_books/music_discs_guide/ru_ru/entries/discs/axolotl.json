@@ -1,0 +1,19 @@
+{
+  "name": "Axolotl",
+  "category": "vanillamusicdiscs:discs",
+  "icon": "vanillamusicdiscs:axolotl_music_disc",
+  "sortnum": 3,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "vanillamusicdiscs:axolotl_music_disc",
+      "text": "Сделайте «Axolotl» с помощью $(bold)стола для пластинок$(). Поместите любую стандартную пластинку в левую ячейку, а материал, указанный далее, в среднюю ячейку."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:water_bucket",
+      "title": "Необходимый материал",
+      "text": "Поместите $(item)ведро воды$() $(#808080)$()в среднюю ячейку стола для пластинок вместе с любой стандартной пластинкой."
+    }
+  ]
+}

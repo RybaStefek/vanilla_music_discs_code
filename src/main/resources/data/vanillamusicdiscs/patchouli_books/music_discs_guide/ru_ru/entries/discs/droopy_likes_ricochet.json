@@ -1,0 +1,19 @@
+{
+  "name": "Droopy Likes Ricochet",
+  "category": "vanillamusicdiscs:discs",
+  "icon": "vanillamusicdiscs:droopy_likes_ricochet_music_disc",
+  "sortnum": 13,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "vanillamusicdiscs:droopy_likes_ricochet_music_disc",
+      "text": "Сделайте «Droopy Likes Ricochet» с помощью $(bold)стола для пластинок$(). Поместите любую стандартную пластинку в левую ячейку, а материал, указанный далее, в среднюю ячейку."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:green_candle",
+      "title": "Необходимый материал",
+      "text": "Поместите $(item)зелёную свечу$() $(#808080)$()в среднюю ячейку стола для пластинок вместе с любой стандартной пластинкой."
+    }
+  ]
+}

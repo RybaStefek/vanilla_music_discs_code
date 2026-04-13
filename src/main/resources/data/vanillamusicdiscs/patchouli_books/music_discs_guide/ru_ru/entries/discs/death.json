@@ -1,0 +1,19 @@
+{
+  "name": "Death",
+  "category": "vanillamusicdiscs:discs",
+  "icon": "vanillamusicdiscs:death_music_disc",
+  "sortnum": 9,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "vanillamusicdiscs:death_music_disc",
+      "text": "Сделайте «Death» с помощью $(bold)стола для пластинок$(). Поместите любую стандартную пластинку в левую ячейку, а материал, указанный далее, в среднюю ячейку."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:black_candle",
+      "title": "Необходимый материал",
+      "text": "Поместите $(item)чёрную свечу$() $(#808080)$()в среднюю ячейку стола для пластинок вместе с любой стандартной пластинкой."
+    }
+  ]
+}

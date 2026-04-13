@@ -1,0 +1,19 @@
+{
+  "name": "Sweden",
+  "category": "vanillamusicdiscs:discs",
+  "icon": "vanillamusicdiscs:sweden_music_disc",
+  "sortnum": 32,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "vanillamusicdiscs:sweden_music_disc",
+      "text": "Сделайте «Sweden» с помощью $(bold)стола для пластинок$(). Поместите любую стандартную пластинку в левую ячейку, а материал, указанный далее, в среднюю ячейку."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:poppy",
+      "title": "Необходимый материал",
+      "text": "Поместите $(item)мак$() $(#808080)$()в среднюю ячейку стола для пластинок вместе с любой стандартной пластинкой."
+    }
+  ]
+}

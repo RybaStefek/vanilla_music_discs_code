@@ -13,7 +13,7 @@
       "type": "patchouli:spotlight",
       "item": "minecraft:orange_carpet",
       "title": "Required Material",
-      "text": "$(item)Orange Carpet$() $(#808080)Place it in the middle slot of the Music Discs Table alongside any vanilla music disc.$()"
+      "text": "$(item)Orange Carpet$() $(#808080)$()Place it in the middle slot of the Music Discs Table alongside any vanilla music disc.$()"
     }
   ]
 }
