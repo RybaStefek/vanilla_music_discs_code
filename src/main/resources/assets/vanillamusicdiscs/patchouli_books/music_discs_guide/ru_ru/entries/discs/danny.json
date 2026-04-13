@@ -1,0 +1,19 @@
+{
+  "name": "Danny",
+  "category": "vanillamusicdiscs:discs",
+  "icon": "vanillamusicdiscs:danny_music_disc",
+  "sortnum": 8,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "vanillamusicdiscs:danny_music_disc",
+      "text": "Сделайте «Danny» с помощью $(bold)стола для пластинок$(). Поместите любую стандартную пластинку в левую ячейку, а материал, указанный далее, в среднюю ячейку."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:purple_wool",
+      "title": "Необходимый материал",
+      "text": "Поместите $(item)фиолетовую шерсть$() $(#808080)$()в среднюю ячейку стола для пластинок вместе с любой стандартной пластинкой."
+    }
+  ]
+}

@@ -13,7 +13,7 @@
       "type": "patchouli:spotlight",
       "item": "minecraft:sponge",
       "title": "Required Material",
-      "text": "$(item)Sponge$() $(#808080)Place it in the middle slot of the Music Discs Table alongside any vanilla music disc.$()"
+      "text": "$(item)Sponge$() $(#808080)$()Place it in the middle slot of the Music Discs Table alongside any vanilla music disc.$()"
     }
   ]
 }

@@ -1,0 +1,19 @@
+{
+  "name": "Clark",
+  "category": "vanillamusicdiscs:discs",
+  "icon": "vanillamusicdiscs:clark_music_disc",
+  "sortnum": 7,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "vanillamusicdiscs:clark_music_disc",
+      "text": "Сделайте «Clark» с помощью $(bold)стола для пластинок$(). Поместите любую стандартную пластинку в левую ячейку, а материал, указанный далее, в среднюю ячейку."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:blue_dye",
+      "title": "Необходимый материал",
+      "text": "Поместите $(item)синий краситель$() $(#808080)$()в среднюю ячейку стола для пластинок вместе с любой стандартной пластинкой."
+    }
+  ]
+}

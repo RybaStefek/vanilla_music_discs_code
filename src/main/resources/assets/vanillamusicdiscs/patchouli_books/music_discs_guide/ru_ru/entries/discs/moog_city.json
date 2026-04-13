@@ -1,0 +1,19 @@
+{
+  "name": "Moog City",
+  "category": "vanillamusicdiscs:discs",
+  "icon": "vanillamusicdiscs:moog_city_music_disc",
+  "sortnum": 27,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "vanillamusicdiscs:moog_city_music_disc",
+      "text": "Сделайте «Moog City» с помощью $(bold)стола для пластинок$(). Поместите любую стандартную пластинку в левую ячейку, а материал, указанный далее, в среднюю ячейку."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:moss_block",
+      "title": "Необходимый материал",
+      "text": "Поместите $(item)блок мха$() $(#808080)$()в среднюю ячейку стола для пластинок вместе с любой стандартной пластинкой."
+    }
+  ]
+}

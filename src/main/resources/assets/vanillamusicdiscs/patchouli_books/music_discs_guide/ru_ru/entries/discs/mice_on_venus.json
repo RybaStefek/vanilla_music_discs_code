@@ -1,0 +1,19 @@
+{
+  "name": "Mice on Venus",
+  "category": "vanillamusicdiscs:discs",
+  "icon": "vanillamusicdiscs:mice_on_venus_music_disc",
+  "sortnum": 25,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "vanillamusicdiscs:mice_on_venus_music_disc",
+      "text": "Сделайте «Mice on Venus» с помощью $(bold)стола для пластинок$(). Поместите любую стандартную пластинку в левую ячейку, а материал, указанный далее, в среднюю ячейку."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:string",
+      "title": "Необходимый материал",
+      "text": "Поместите $(item)нить$() $(#808080)$()в среднюю ячейку стола для пластинок вместе с любой стандартной пластинкой."
+    }
+  ]
+}

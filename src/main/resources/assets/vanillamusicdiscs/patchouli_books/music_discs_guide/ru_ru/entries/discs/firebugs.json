@@ -1,0 +1,19 @@
+{
+  "name": "Firebugs",
+  "category": "vanillamusicdiscs:discs",
+  "icon": "vanillamusicdiscs:firebugs_music_disc",
+  "sortnum": 17,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "vanillamusicdiscs:firebugs_music_disc",
+      "text": "Сделайте «Firebugs» с помощью $(bold)стола для пластинок$(). Поместите любую стандартную пластинку в левую ячейку, а материал, указанный далее, в среднюю ячейку."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:campfire",
+      "title": "Необходимый материал",
+      "text": "Поместите $(item)костёр$() $(#808080)$()в среднюю ячейку стола для пластинок вместе с любой стандартной пластинкой."
+    }
+  ]
+}

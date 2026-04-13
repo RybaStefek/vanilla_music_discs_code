@@ -1,0 +1,19 @@
+{
+  "name": "Rubedo",
+  "category": "vanillamusicdiscs:discs",
+  "icon": "vanillamusicdiscs:rubedo_music_disc",
+  "sortnum": 29,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "vanillamusicdiscs:rubedo_music_disc",
+      "text": "Сделайте «Rubedo» с помощью $(bold)стола для пластинок$(). Поместите любую стандартную пластинку в левую ячейку, а материал, указанный далее, в среднюю ячейку."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:pink_dye",
+      "title": "Необходимый материал",
+      "text": "Поместите $(item)розовый краситель$() $(#808080)$()в среднюю ячейку стола для пластинок вместе с любой стандартной пластинкой."
+    }
+  ]
+}

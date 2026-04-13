@@ -1,0 +1,19 @@
+{
+  "name": "Minecraft",
+  "category": "vanillamusicdiscs:discs",
+  "icon": "vanillamusicdiscs:minecraft_music_disc",
+  "sortnum": 26,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "vanillamusicdiscs:minecraft_music_disc",
+      "text": "Сделайте «Minecraft» с помощью $(bold)стола для пластинок$(). Поместите любую стандартную пластинку в левую ячейку, а материал, указанный далее, в среднюю ячейку."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:grass_block",
+      "title": "Необходимый материал",
+      "text": "Поместите $(item)дёрн$() $(#808080)$()в среднюю ячейку стола для пластинок вместе с любой стандартной пластинкой."
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Dry Hands",
+  "category": "vanillamusicdiscs:discs",
+  "icon": "vanillamusicdiscs:dry_hands_music_disc",
+  "sortnum": 15,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "vanillamusicdiscs:dry_hands_music_disc",
+      "text": "Сделайте «Dry Hands» с помощью $(bold)стола для пластинок$(). Поместите любую стандартную пластинку в левую ячейку, а материал, указанный далее, в среднюю ячейку."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:sponge",
+      "title": "Необходимый материал",
+      "text": "Поместите $(item)губку$() $(#808080)$()в среднюю ячейку стола для пластинок вместе с любой стандартной пластинкой."
+    }
+  ]
+}

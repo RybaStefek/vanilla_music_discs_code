@@ -115,9 +115,8 @@ public class MusicDiscsTableBlockEntity extends BlockEntity implements MenuProvi
 
     @Override
     public Component getDisplayName() {
-        return Component.literal("Music Discs Table");
+        return Component.translatable("container.vanillamusicdiscs.music_discs_table");
     }
-
     @Nullable
     @Override
     public AbstractContainerMenu createMenu(int pContainerId, Inventory pInventory, Player pPlayer) {

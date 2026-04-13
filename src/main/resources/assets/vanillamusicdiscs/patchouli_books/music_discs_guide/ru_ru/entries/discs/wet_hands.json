@@ -1,0 +1,19 @@
+{
+  "name": "Wet Hands",
+  "category": "vanillamusicdiscs:discs",
+  "icon": "vanillamusicdiscs:wet_hands_music_disc",
+  "sortnum": 35,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "vanillamusicdiscs:wet_hands_music_disc",
+      "text": "Сделайте «Wet Hands» с помощью $(bold)стола для пластинок$(). Поместите любую стандартную пластинку в левую ячейку, а материал, указанный далее, в среднюю ячейку."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:wet_sponge",
+      "title": "Необходимый материал",
+      "text": "Поместите $(item)мокрую губку$() $(#808080)$()в среднюю ячейку стола для пластинок вместе с любой стандартной пластинкой."
+    }
+  ]
+}
