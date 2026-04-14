@@ -25,6 +25,9 @@ minecraft {
         client {
             workingDirectory project.file('run')
 
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+
             property 'forge.logging.markers', 'REGISTRIES'
 
             property 'forge.logging.console.level', 'debug'
@@ -38,6 +41,9 @@ minecraft {
 
         server {
             workingDirectory project.file('run')
+
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
 
             property 'forge.logging.markers', 'REGISTRIES'
 
@@ -70,14 +76,14 @@ minecraft {
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 repositories {
-    // Patchouli
-    maven { url = "https://maven.blamejared.com" }
+    maven { url 'https://maven.blamejared.com' }
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.18.2-40.0.5'
+    minecraft 'net.minecraftforge:forge:1.18.2-40.3.0'
 
-    implementation fg.deobf("vazkii.patchouli:Patchouli:1.18.2-68")
+    compileOnly fg.deobf("vazkii.patchouli:Patchouli:1.18.2-71.1:api")
+    runtimeOnly fg.deobf("vazkii.patchouli:Patchouli:1.18.2-71.1")
 }
 
 jar {
@@ -85,7 +91,7 @@ jar {
         attributes([
                 "Specification-Title"     : "vanillamusicdiscs",
                 "Specification-Vendor"    : "vanillamusicdiscssareus",
-                "Specification-Version"   : "2.0",
+                "Specification-Version"   : "2.0.1",
                 "Implementation-Title"    : project.name,
                 "Implementation-Version"  : project.jar.archiveVersion,
                 "Implementation-Vendor"   : "vanillamusicdiscssareus",
