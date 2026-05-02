@@ -3,7 +3,7 @@ loaderVersion="[40,)"
 license="All rights reserved"
 [[mods]]
 modId="vanillamusicdiscs"
-version="${file.jarVersion}"
+version="2.0.3"
 displayName="Vanilla Music Discs"
 logoFile=""
 credits=""
@@ -29,3 +29,10 @@ description="Mod about music discs"
     versionRange = "[1.20.1-84,)"
     ordering = "NONE"
     side = "BOTH"
+
+[[dependencies.vanillamusicdiscs]]
+modId = "configured"
+mandatory = false
+versionRange = "[1.20.1-2.2.3,)"
+ordering = "NONE"
+side = "BOTH"
