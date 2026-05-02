@@ -32,6 +32,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.lang.reflect.Field;
+import java.util.HashMap;
+import java.util.IdentityHashMap;
 import java.util.Map;
 
 
@@ -80,8 +82,19 @@ public class VanillaMusicDiscs {
 
     private void replaceSpread(Registry<StructureSet> registry, String name, int spacing, int separation, int salt) {
         try {
-            Field frozenField = MappedRegistry.class.getDeclaredField("frozen");
+            Field frozenField = null;
+            for (Field f : MappedRegistry.class.getDeclaredFields()) {
+                if (f.getType() == boolean.class && !java.lang.reflect.Modifier.isVolatile(f.getModifiers())) {
+                    frozenField = f;
+                    break;
+                }
+            }
+            if (frozenField == null) {
+                LOGGER.error("Could not find frozen field in MappedRegistry for {}", name);
+                return;
+            }
             frozenField.setAccessible(true);
+
             frozenField.set(registry, false);
 
             ResourceLocation id = new ResourceLocation(MOD_ID, name);
@@ -101,8 +114,16 @@ public class VanillaMusicDiscs {
                     new RandomSpreadStructurePlacement(spacing, separation, RandomSpreadType.LINEAR, salt)
             );
 
-            Field byValueField = MappedRegistry.class.getDeclaredField("byValue");
+            Field byValueField = null;
+            for (Field f : MappedRegistry.class.getDeclaredFields()) {
+                if (Map.class.isAssignableFrom(f.getType()) &&
+                        !f.getType().isAssignableFrom(HashMap.class)) {
+                    byValueField = f;
+                    break;
+                }
+            }
             byValueField.setAccessible(true);
+
             Map<StructureSet, Holder.Reference<StructureSet>> byValue =
                     (Map<StructureSet, Holder.Reference<StructureSet>>) byValueField.get(registry);
             byValue.remove(oldSet);
