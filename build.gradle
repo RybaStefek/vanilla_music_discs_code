@@ -11,7 +11,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '2.0.1-1.18.2-forge'
+version = '2.0.2-1.18.2-forge'
 group = 'net.rybastefek.vanillamusicdiscs'
 archivesBaseName = 'vanillamusicdiscs'
 
@@ -77,10 +77,14 @@ sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 repositories {
     maven { url 'https://maven.blamejared.com' }
+    maven { url "https://cursemaven.com" }
 }
 
 dependencies {
     minecraft 'net.minecraftforge:forge:1.18.2-40.3.0'
+
+    compileOnly fg.deobf("curse.maven:configured-457570:4462832")
+    runtimeOnly fg.deobf("curse.maven:configured-457570:4462832")
 
     compileOnly fg.deobf("vazkii.patchouli:Patchouli:1.18.2-71.1:api")
     runtimeOnly fg.deobf("vazkii.patchouli:Patchouli:1.18.2-71.1")
@@ -91,7 +95,7 @@ jar {
         attributes([
                 "Specification-Title"     : "vanillamusicdiscs",
                 "Specification-Vendor"    : "vanillamusicdiscssareus",
-                "Specification-Version"   : "2.0.1",
+                "Specification-Version"   : "2.0.2",
                 "Implementation-Title"    : project.name,
                 "Implementation-Version"  : project.jar.archiveVersion,
                 "Implementation-Vendor"   : "vanillamusicdiscssareus",

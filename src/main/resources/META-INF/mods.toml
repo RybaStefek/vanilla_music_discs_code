@@ -3,7 +3,7 @@ loaderVersion="[40,)"
 license="All rights reserved"
 [[mods]]
 modId="vanillamusicdiscs"
-version="${file.jarVersion}"
+version="2.0.2"
 displayName="Vanilla Music Discs"
 logoFile=""
 credits=""
@@ -27,5 +27,12 @@ description="Mod about music discs"
 modId = "patchouli"
 mandatory = true
 versionRange = "[1.18.2-71.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.vanillamusicdiscs]]
+modId = "configured"
+mandatory = false
+versionRange = "[1.18.2-2.0.1,)"
 ordering = "NONE"
 side = "BOTH"

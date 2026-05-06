@@ -8,10 +8,6 @@ import net.rybastefek.vanillamusicdiscs.VanillaMusicDiscs;
 
 public class ModStructures {
 
-    public static final DeferredRegister<StructureFeature<?>> DEFERRED_REGISTRY_STRUCTURE =
-            DeferredRegister.create(ForgeRegistries.STRUCTURE_FEATURES, VanillaMusicDiscs.MOD_ID);
-
     public static void register(IEventBus eventBus) {
-        DEFERRED_REGISTRY_STRUCTURE.register(eventBus);
     }
 }
