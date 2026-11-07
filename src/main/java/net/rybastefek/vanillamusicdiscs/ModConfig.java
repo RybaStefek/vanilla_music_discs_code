@@ -1,19 +1,19 @@
 package net.rybastefek.vanillamusicdiscs;
 
-import net.minecraftforge.common.ForgeConfigSpec;
+import net.neoforged.neoforge.common.ModConfigSpec;
 
 public class ModConfig {
-    public static final ForgeConfigSpec.IntValue PLAINS_SPACING;
-    public static final ForgeConfigSpec.IntValue PLAINS_SEPARATION;
-    public static final ForgeConfigSpec.IntValue DESERT_SPACING;
-    public static final ForgeConfigSpec.IntValue DESERT_SEPARATION;
-    public static final ForgeConfigSpec.IntValue TAIGA_SPACING;
-    public static final ForgeConfigSpec.IntValue TAIGA_SEPARATION;
+    public static final ModConfigSpec.IntValue PLAINS_SPACING;
+    public static final ModConfigSpec.IntValue PLAINS_SEPARATION;
+    public static final ModConfigSpec.IntValue DESERT_SPACING;
+    public static final ModConfigSpec.IntValue DESERT_SEPARATION;
+    public static final ModConfigSpec.IntValue TAIGA_SPACING;
+    public static final ModConfigSpec.IntValue TAIGA_SEPARATION;
 
-    public static final ForgeConfigSpec SPEC;
+    public static final ModConfigSpec SPEC;
 
     static {
-        ForgeConfigSpec.Builder builder = new ForgeConfigSpec.Builder();
+        ModConfigSpec.Builder builder = new ModConfigSpec.Builder();
 
         builder.push("musical_house_plains");
         PLAINS_SPACING = builder.comment("Min: 2, separation must be lower").defineInRange("spacing", 16, 2, 100);

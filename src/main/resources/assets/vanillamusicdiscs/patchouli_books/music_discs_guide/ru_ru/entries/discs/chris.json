@@ -2,7 +2,7 @@
   "name": "Chris",
   "category": "vanillamusicdiscs:discs",
   "icon": "vanillamusicdiscs:chris_music_disc",
-  "sortnum": 5,
+  "sortnum": 7,
   "pages": [
     {
       "type": "patchouli:spotlight",

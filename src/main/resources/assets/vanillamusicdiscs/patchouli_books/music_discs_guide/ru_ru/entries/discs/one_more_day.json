@@ -2,7 +2,7 @@
   "name": "One More Day",
   "category": "vanillamusicdiscs:discs",
   "icon": "vanillamusicdiscs:one_more_day_music_disc",
-  "sortnum": 28,
+  "sortnum": 32,
   "pages": [
     {
       "type": "patchouli:spotlight",

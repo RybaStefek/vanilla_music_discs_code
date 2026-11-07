@@ -2,7 +2,7 @@
   "name": "Excuse",
   "category": "vanillamusicdiscs:discs",
   "icon": "vanillamusicdiscs:excuse_music_disc",
-  "sortnum": 16,
+  "sortnum": 19,
   "pages": [
     {
       "type": "patchouli:spotlight",

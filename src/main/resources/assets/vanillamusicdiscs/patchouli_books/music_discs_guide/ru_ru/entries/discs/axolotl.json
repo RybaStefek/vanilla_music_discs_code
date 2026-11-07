@@ -2,7 +2,7 @@
   "name": "Axolotl",
   "category": "vanillamusicdiscs:discs",
   "icon": "vanillamusicdiscs:axolotl_music_disc",
-  "sortnum": 3,
+  "sortnum": 4,
   "pages": [
     {
       "type": "patchouli:spotlight",

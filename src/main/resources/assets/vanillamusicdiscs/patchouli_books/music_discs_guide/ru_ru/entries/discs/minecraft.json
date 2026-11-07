@@ -2,7 +2,7 @@
   "name": "Minecraft",
   "category": "vanillamusicdiscs:discs",
   "icon": "vanillamusicdiscs:minecraft_music_disc",
-  "sortnum": 26,
+  "sortnum": 29,
   "pages": [
     {
       "type": "patchouli:spotlight",

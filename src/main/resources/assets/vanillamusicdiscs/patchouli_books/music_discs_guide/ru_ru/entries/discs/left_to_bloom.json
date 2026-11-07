@@ -2,7 +2,7 @@
   "name": "Left to Bloom",
   "category": "vanillamusicdiscs:discs",
   "icon": "vanillamusicdiscs:left_to_bloom_music_disc",
-  "sortnum": 23,
+  "sortnum": 26,
   "pages": [
     {
       "type": "patchouli:spotlight",

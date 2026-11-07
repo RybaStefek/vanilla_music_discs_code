@@ -2,7 +2,7 @@
   "name": "Subwoofer Lullaby",
   "category": "vanillamusicdiscs:discs",
   "icon": "vanillamusicdiscs:subwoofer_lullaby_music_disc",
-  "sortnum": 31,
+  "sortnum": 36,
   "pages": [
     {
       "type": "patchouli:spotlight",

@@ -2,7 +2,7 @@
   "name": "Dry Hands",
   "category": "vanillamusicdiscs:discs",
   "icon": "vanillamusicdiscs:dry_hands_music_disc",
-  "sortnum": 15,
+  "sortnum": 18,
   "pages": [
     {
       "type": "patchouli:spotlight",

@@ -1,0 +1,8 @@
+{
+  "sound_event": "vanillamusicdiscs:dog",
+  "description": {
+    "translate": "item.vanillamusicdiscs.dog_music_disc.desc"
+  },
+  "length_in_seconds": 130.95,
+  "comparator_output": 15
+}

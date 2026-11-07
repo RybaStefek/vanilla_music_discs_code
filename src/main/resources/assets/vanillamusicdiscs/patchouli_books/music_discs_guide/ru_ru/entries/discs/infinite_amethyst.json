@@ -2,7 +2,7 @@
   "name": "Infinite Amethyst",
   "category": "vanillamusicdiscs:discs",
   "icon": "vanillamusicdiscs:infinite_amethyst_music_disc",
-  "sortnum": 20,
+  "sortnum": 23,
   "pages": [
     {
       "type": "patchouli:spotlight",

@@ -2,7 +2,7 @@
   "name": "Beginning",
   "category": "vanillamusicdiscs:discs",
   "icon": "vanillamusicdiscs:beginning_music_disc",
-  "sortnum": 4,
+  "sortnum": 5,
   "pages": [
     {
       "type": "patchouli:spotlight",

@@ -2,7 +2,7 @@
   "name": "Labyrinthine",
   "category": "vanillamusicdiscs:discs",
   "icon": "vanillamusicdiscs:labyrinthine_music_disc",
-  "sortnum": 22,
+  "sortnum": 25,
   "pages": [
     {
       "type": "patchouli:spotlight",

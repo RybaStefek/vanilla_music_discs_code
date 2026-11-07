@@ -1,0 +1,33 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="All rights reserved"
+
+[[mods]]
+modId="vanillamusicdiscs"
+version="2.0.4"
+displayName="Vanilla Music Discs"
+logoFile=""
+credits=""
+authors="RybaStefek"
+description="Mod about music discs"
+
+[[dependencies.vanillamusicdiscs]]
+modId="neoforge"
+mandatory=true
+versionRange="[21.1.211,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.vanillamusicdiscs]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.21.1,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.vanillamusicdiscs]]
+modId="patchouli"
+mandatory=true
+versionRange="[1.21.1-93,)"
+ordering="NONE"
+side="BOTH"

@@ -1,0 +1,8 @@
+{
+  "sound_event": "vanillamusicdiscs:oxygene",
+  "description": {
+    "translate": "item.vanillamusicdiscs.oxygene_music_disc.desc"
+  },
+  "length_in_seconds": 65,
+  "comparator_output": 15
+}

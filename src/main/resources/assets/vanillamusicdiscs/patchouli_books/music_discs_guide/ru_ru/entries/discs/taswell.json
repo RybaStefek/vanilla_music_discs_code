@@ -1,0 +1,19 @@
+{
+  "name": "Taswell",
+  "category": "vanillamusicdiscs:discs",
+  "icon": "vanillamusicdiscs:taswell_music_disc",
+  "sortnum": 38,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "vanillamusicdiscs:taswell_music_disc",
+      "text": "Сделайте «Taswell» с помощью $(bold)стола для пластинок$(). Поместите любую стандартную пластинку в левую ячейку, а материал, указанный далее, в среднюю ячейку."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:honeycomb",
+      "title": "Необходимый материал",
+      "text": "Поместите $(item)медовые соты$() $(#808080)$()в среднюю ячейку стола для пластинок вместе с любой стандартной пластинкой."
+    }
+  ]
+}

@@ -2,6 +2,7 @@ package net.rybastefek.vanillamusicdiscs.block.entity.custom;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.Containers;
@@ -14,33 +15,24 @@ import net.minecraft.world.inventory.ContainerData;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.item.RecordItem;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraftforge.common.capabilities.Capability;
-import net.minecraftforge.common.capabilities.ForgeCapabilities;
-import net.minecraftforge.common.util.LazyOptional;
-import net.minecraftforge.items.IItemHandler;
-import net.minecraftforge.items.ItemStackHandler;
+import net.neoforged.neoforge.items.ItemStackHandler;
 import net.rybastefek.vanillamusicdiscs.block.entity.ModBlockEntities;
 import net.rybastefek.vanillamusicdiscs.items.ModItems;
 import net.rybastefek.vanillamusicdiscs.screen.MusicDiscsTableMenu;
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class MusicDiscsTableBlockEntity extends BlockEntity implements MenuProvider {
-    private final ItemStackHandler itemHandler = new ItemStackHandler(3) {
+    public final ItemStackHandler itemHandler = new ItemStackHandler(3) {
         @Override
         protected void onContentsChanged(int slot) {
             setChanged();
         }
     };
-
-    private LazyOptional<IItemHandler> lazyItemHandler = LazyOptional.empty();
 
     private int progress = 0;
     private int maxProgress = 78;
@@ -49,13 +41,16 @@ public class MusicDiscsTableBlockEntity extends BlockEntity implements MenuProvi
 
     static {
         RECIPES.put(Items.ORANGE_DYE, ModItems.AERIE.get());
+        RECIPES.put(Items.CYAN_DYE, ModItems.ALPHA.get());
         RECIPES.put(Items.ORANGE_WOOL, ModItems.ANCESTRY.get());
         RECIPES.put(Items.DIAMOND, ModItems.ARIA_MATH.get());
         RECIPES.put(Items.WATER_BUCKET, ModItems.AXOLOTL.get());
         RECIPES.put(Items.WOODEN_PICKAXE, ModItems.BEGINNING.get());
+        RECIPES.put(Items.RED_DYE, ModItems.BEGINNING_2.get());
         RECIPES.put(Items.BLUE_ORCHID, ModItems.CHRIS.get());
         RECIPES.put(Items.PINK_TULIP, ModItems.CHRYSOPOEIA.get());
         RECIPES.put(Items.BLUE_DYE, ModItems.CLARK.get());
+        RECIPES.put(Items.LIGHT_GRAY_CONCRETE, ModItems.CONCRETE_HALLS.get());
         RECIPES.put(Items.PURPLE_WOOL, ModItems.DANNY.get());
         RECIPES.put(Items.BLACK_CANDLE, ModItems.DEATH.get());
         RECIPES.put(Items.BONE, ModItems.DOG.get());
@@ -76,11 +71,14 @@ public class MusicDiscsTableBlockEntity extends BlockEntity implements MenuProvi
         RECIPES.put(Items.STRING, ModItems.MICE_ON_VENUS.get());
         RECIPES.put(Items.GRASS_BLOCK, ModItems.MINECRAFT.get());
         RECIPES.put(Items.MOSS_BLOCK, ModItems.MOOG_CITY.get());
+        RECIPES.put(Items.MAGENTA_DYE, ModItems.MOOG_CITY_2.get());
         RECIPES.put(Items.SUNFLOWER, ModItems.ONE_MORE_DAY.get());
+        RECIPES.put(Items.LAPIS_LAZULI, ModItems.OXYGENE.get());
         RECIPES.put(Items.PINK_DYE, ModItems.RUBEDO.get());
         RECIPES.put(Items.PINK_BED, ModItems.SO_BELOW.get());
         RECIPES.put(Items.LIME_BED, ModItems.SUBWOOFER_LULLABY.get());
         RECIPES.put(Items.POPPY, ModItems.SWEDEN.get());
+        RECIPES.put(Items.HONEYCOMB, ModItems.TASWELL.get());
         RECIPES.put(Items.BOOK, ModItems.WENDING.get());
         RECIPES.put(Items.WET_SPONGE, ModItems.WET_HANDS.get());
     }
@@ -117,43 +115,23 @@ public class MusicDiscsTableBlockEntity extends BlockEntity implements MenuProvi
     public Component getDisplayName() {
         return Component.translatable("container.vanillamusicdiscs.music_discs_table");
     }
-    @Nullable
+
     @Override
     public AbstractContainerMenu createMenu(int pContainerId, Inventory pInventory, Player pPlayer) {
         return new MusicDiscsTableMenu(pContainerId, pInventory, this, this.data);
     }
 
     @Override
-    public @NotNull <T> LazyOptional<T> getCapability(@NotNull Capability<T> cap, @Nullable Direction side) {
-        if (cap == ForgeCapabilities.ITEM_HANDLER) {
-            return lazyItemHandler.cast();
-        }
-        return super.getCapability(cap, side);
-    }
-
-    @Override
-    public void onLoad() {
-        super.onLoad();
-        lazyItemHandler = LazyOptional.of(() -> itemHandler);
-    }
-
-    @Override
-    public void invalidateCaps() {
-        super.invalidateCaps();
-        lazyItemHandler.invalidate();
-    }
-
-    @Override
-    protected void saveAdditional(CompoundTag nbt) {
-        nbt.put("inventory", itemHandler.serializeNBT());
+    protected void saveAdditional(CompoundTag nbt, net.minecraft.core.HolderLookup.Provider provider) {
+        nbt.put("inventory", itemHandler.serializeNBT(provider));
         nbt.putInt("music_discs_table.progress", progress);
-        super.saveAdditional(nbt);
+        super.saveAdditional(nbt, provider);
     }
 
     @Override
-    public void load(CompoundTag nbt) {
-        super.load(nbt);
-        itemHandler.deserializeNBT(nbt.getCompound("inventory"));
+    public void loadAdditional(CompoundTag nbt, net.minecraft.core.HolderLookup.Provider provider) {
+        super.loadAdditional(nbt, provider);
+        itemHandler.deserializeNBT(provider, nbt.getCompound("inventory"));
         progress = nbt.getInt("music_discs_table.progress");
     }
 
@@ -166,14 +144,11 @@ public class MusicDiscsTableBlockEntity extends BlockEntity implements MenuProvi
     }
 
     public static void tick(Level level, BlockPos pos, BlockState state, MusicDiscsTableBlockEntity blockEntity) {
-        if (level.isClientSide()) {
-            return;
-        }
+        if (level.isClientSide()) return;
 
         if (blockEntity.hasRecipe()) {
             blockEntity.progress++;
             blockEntity.setChanged();
-
             if (blockEntity.progress >= blockEntity.maxProgress) {
                 blockEntity.craftItem();
                 blockEntity.progress = 0;
@@ -189,18 +164,10 @@ public class MusicDiscsTableBlockEntity extends BlockEntity implements MenuProvi
         ItemStack material = this.itemHandler.getStackInSlot(1);
         ItemStack output = this.itemHandler.getStackInSlot(2);
 
-        if (disc.isEmpty() || material.isEmpty()) {
-            return false;
-        }
-        if (!(disc.getItem() instanceof RecordItem)) {
-            return false;
-        }
-        if (!RECIPES.containsKey(material.getItem())) {
-            return false;
-        }
-        if (!output.isEmpty()) {
-            return false;
-        }
+        if (disc.isEmpty() || material.isEmpty()) return false;
+        if (disc.get(DataComponents.JUKEBOX_PLAYABLE) == null) return false;
+        if (!RECIPES.containsKey(material.getItem())) return false;
+        if (!output.isEmpty()) return false;
         return true;
     }
 

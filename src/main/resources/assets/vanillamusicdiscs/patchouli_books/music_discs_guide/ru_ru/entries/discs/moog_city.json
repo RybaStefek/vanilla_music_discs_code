@@ -2,7 +2,7 @@
   "name": "Moog City",
   "category": "vanillamusicdiscs:discs",
   "icon": "vanillamusicdiscs:moog_city_music_disc",
-  "sortnum": 27,
+  "sortnum": 30,
   "pages": [
     {
       "type": "patchouli:spotlight",

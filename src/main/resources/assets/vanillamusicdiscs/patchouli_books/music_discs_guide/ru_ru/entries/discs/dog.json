@@ -2,7 +2,7 @@
   "name": "Dog",
   "category": "vanillamusicdiscs:discs",
   "icon": "vanillamusicdiscs:dog_music_disc",
-  "sortnum": 10,
+  "sortnum": 13,
   "pages": [
     {
       "type": "patchouli:spotlight",

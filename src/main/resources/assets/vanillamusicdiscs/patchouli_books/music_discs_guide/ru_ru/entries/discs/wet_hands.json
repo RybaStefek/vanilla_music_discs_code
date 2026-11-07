@@ -2,7 +2,7 @@
   "name": "Wet Hands",
   "category": "vanillamusicdiscs:discs",
   "icon": "vanillamusicdiscs:wet_hands_music_disc",
-  "sortnum": 35,
+  "sortnum": 40,
   "pages": [
     {
       "type": "patchouli:spotlight",

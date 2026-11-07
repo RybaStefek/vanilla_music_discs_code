@@ -1,0 +1,8 @@
+{
+  "sound_event": "vanillamusicdiscs:firebugs",
+  "description": {
+    "translate": "item.vanillamusicdiscs.firebugs_music_disc.desc"
+  },
+  "length_in_seconds": 312.75,
+  "comparator_output": 15
+}

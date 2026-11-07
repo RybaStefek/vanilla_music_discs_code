@@ -1,0 +1,19 @@
+{
+  "name": "Oxygène",
+  "category": "vanillamusicdiscs:discs",
+  "icon": "vanillamusicdiscs:oxygene_music_disc",
+  "sortnum": 33,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "vanillamusicdiscs:oxygene_music_disc",
+      "text": "Craft Oxygène using the $(bold)Music Discs Table$(). Place any vanilla music disc in the left slot and the material shown below in the middle slot."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:lapis_lazuli",
+      "title": "Required Material",
+      "text": "$(item)Lapis Lazuli$() $(#808080)$()$()Place it in the middle slot of the Music Discs Table alongside any vanilla music disc.$()"
+    }
+  ]
+}

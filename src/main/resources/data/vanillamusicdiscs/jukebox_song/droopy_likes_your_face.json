@@ -1,0 +1,8 @@
+{
+  "sound_event": "vanillamusicdiscs:droopy_likes_your_face",
+  "description": {
+    "translate": "item.vanillamusicdiscs.droopy_likes_your_face_music_disc.desc"
+  },
+  "length_in_seconds": 127.8,
+  "comparator_output": 15
+}

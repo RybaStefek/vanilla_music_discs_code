@@ -2,7 +2,7 @@
   "name": "Living Mice",
   "category": "vanillamusicdiscs:discs",
   "icon": "vanillamusicdiscs:living_mice_music_disc",
-  "sortnum": 24,
+  "sortnum": 27,
   "pages": [
     {
       "type": "patchouli:spotlight",

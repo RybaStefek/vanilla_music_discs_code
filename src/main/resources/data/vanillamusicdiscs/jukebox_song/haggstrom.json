@@ -1,0 +1,8 @@
+{
+  "sound_event": "vanillamusicdiscs:haggstrom",
+  "description": {
+    "translate": "item.vanillamusicdiscs.haggstrom_music_disc.desc"
+  },
+  "length_in_seconds": 201.3,
+  "comparator_output": 15
+}

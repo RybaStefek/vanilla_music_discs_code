@@ -1,0 +1,8 @@
+{
+  "sound_event": "vanillamusicdiscs:taswell",
+  "description": {
+    "translate": "item.vanillamusicdiscs.taswell_music_disc.desc"
+  },
+  "length_in_seconds": 515,
+  "comparator_output": 15
+}

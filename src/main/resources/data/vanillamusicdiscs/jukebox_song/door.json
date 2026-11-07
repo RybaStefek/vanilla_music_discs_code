@@ -1,0 +1,8 @@
+{
+  "sound_event": "vanillamusicdiscs:door",
+  "description": {
+    "translate": "item.vanillamusicdiscs.door_music_disc.desc"
+  },
+  "length_in_seconds": 111.45,
+  "comparator_output": 15
+}

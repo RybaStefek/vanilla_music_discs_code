@@ -2,7 +2,7 @@
   "name": "Door",
   "category": "vanillamusicdiscs:discs",
   "icon": "vanillamusicdiscs:door_music_disc",
-  "sortnum": 11,
+  "sortnum": 14,
   "pages": [
     {
       "type": "patchouli:spotlight",

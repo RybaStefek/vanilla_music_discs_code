@@ -2,7 +2,7 @@
   "name": "Dreiton",
   "category": "vanillamusicdiscs:discs",
   "icon": "vanillamusicdiscs:dreiton_music_disc",
-  "sortnum": 12,
+  "sortnum": 15,
   "pages": [
     {
       "type": "patchouli:spotlight",

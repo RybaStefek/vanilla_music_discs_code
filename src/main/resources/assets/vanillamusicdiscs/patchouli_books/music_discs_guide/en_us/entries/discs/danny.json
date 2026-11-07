@@ -2,7 +2,7 @@
   "name": "Danny",
   "category": "vanillamusicdiscs:discs",
   "icon": "vanillamusicdiscs:danny_music_disc",
-  "sortnum": 8,
+  "sortnum": 11,
   "pages": [
     {
       "type": "patchouli:spotlight",

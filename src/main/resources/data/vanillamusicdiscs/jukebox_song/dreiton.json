@@ -1,0 +1,8 @@
+{
+  "sound_event": "vanillamusicdiscs:dreiton",
+  "description": {
+    "translate": "item.vanillamusicdiscs.dreiton_music_disc.desc"
+  },
+  "length_in_seconds": 497.05,
+  "comparator_output": 15
+}

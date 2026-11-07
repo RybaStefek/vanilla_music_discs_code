@@ -2,7 +2,7 @@
   "name": "Aria Math",
   "category": "vanillamusicdiscs:discs",
   "icon": "vanillamusicdiscs:aria_math_music_disc",
-  "sortnum": 2,
+  "sortnum": 3,
   "pages": [
     {
       "type": "patchouli:spotlight",

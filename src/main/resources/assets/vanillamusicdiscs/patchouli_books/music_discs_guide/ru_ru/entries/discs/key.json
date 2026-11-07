@@ -2,7 +2,7 @@
   "name": "Key",
   "category": "vanillamusicdiscs:discs",
   "icon": "vanillamusicdiscs:key_music_disc",
-  "sortnum": 21,
+  "sortnum": 24,
   "pages": [
     {
       "type": "patchouli:spotlight",

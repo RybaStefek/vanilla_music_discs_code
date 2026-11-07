@@ -6,7 +6,6 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.*;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
-import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.rybastefek.vanillamusicdiscs.block.ModBlocks;
 import net.rybastefek.vanillamusicdiscs.block.entity.custom.MusicDiscsTableBlockEntity;
 import net.rybastefek.vanillamusicdiscs.screen.slot.MaterialInputSlot;
@@ -19,7 +18,7 @@ public class MusicDiscsTableMenu extends AbstractContainerMenu {
     private final ContainerData data;
 
     public MusicDiscsTableMenu(int pContainerId, Inventory inv, FriendlyByteBuf extraData) {
-        this(pContainerId, inv, (MusicDiscsTableBlockEntity) inv.player.level().getBlockEntity(extraData.readBlockPos()));
+        this(pContainerId, inv, (MusicDiscsTableBlockEntity) inv.player.level().getBlockEntity(extraData.readBlockPos()), new SimpleContainerData(2));
     }
 
     public MusicDiscsTableMenu(int pContainerId, Inventory inv, MusicDiscsTableBlockEntity entity, ContainerData data) {
@@ -33,29 +32,9 @@ public class MusicDiscsTableMenu extends AbstractContainerMenu {
         addPlayerInventory(inv);
         addPlayerHotbar(inv);
 
-        this.blockEntity.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(handler -> {
-            this.addSlot(new MusicDiscInputSlot(handler, 0, 57, 18));
-            this.addSlot(new MaterialInputSlot(handler, 1, 103, 18));
-            this.addSlot(new ModResultSlot(handler, 2, 80, 60));
-        });
-    }
-
-    public MusicDiscsTableMenu(int pContainerId, Inventory inv, MusicDiscsTableBlockEntity entity) {
-        super(ModMenuTypes.MUSIC_DISCS_TABLE_MENU.get(), pContainerId);
-        checkContainerSize(inv, 3);
-        blockEntity = entity;
-        this.level = inv.player.level();
-        this.data = new SimpleContainerData(2);
-
-        addDataSlots(this.data);
-        addPlayerInventory(inv);
-        addPlayerHotbar(inv);
-
-        this.blockEntity.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(handler -> {
-            this.addSlot(new MusicDiscInputSlot(handler, 0, 57, 18));
-            this.addSlot(new MaterialInputSlot(handler, 1, 103, 18));
-            this.addSlot(new ModResultSlot(handler, 2, 80, 60));
-        });
+        this.addSlot(new MusicDiscInputSlot(blockEntity.itemHandler, 0, 57, 18));
+        this.addSlot(new MaterialInputSlot(blockEntity.itemHandler, 1, 103, 18));
+        this.addSlot(new ModResultSlot(blockEntity.itemHandler, 2, 80, 60));
     }
 
     private static final int HOTBAR_SLOT_COUNT = 9;

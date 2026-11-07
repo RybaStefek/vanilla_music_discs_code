@@ -1,0 +1,8 @@
+{
+  "sound_event": "vanillamusicdiscs:wet_hands",
+  "description": {
+    "translate": "item.vanillamusicdiscs.wet_hands_music_disc.desc"
+  },
+  "length_in_seconds": 87.8,
+  "comparator_output": 15
+}

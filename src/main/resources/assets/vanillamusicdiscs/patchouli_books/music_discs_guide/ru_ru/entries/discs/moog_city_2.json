@@ -1,0 +1,19 @@
+{
+  "name": "Moog City 2",
+  "category": "vanillamusicdiscs:discs",
+  "icon": "vanillamusicdiscs:moog_city_2_music_disc",
+  "sortnum": 31,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "vanillamusicdiscs:moog_city_2_music_disc",
+      "text": "Сделайте «Moog City 2» с помощью $(bold)стола для пластинок$(). Поместите любую стандартную пластинку в левую ячейку, а материал, указанный далее, в среднюю ячейку."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:magenta_dye",
+      "title": "Необходимый материал",
+      "text": "Поместите $(item)пурпурный краситель$() $(#808080)$()в среднюю ячейку стола для пластинок вместе с любой стандартной пластинкой."
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "name": "Sweden",
   "category": "vanillamusicdiscs:discs",
   "icon": "vanillamusicdiscs:sweden_music_disc",
-  "sortnum": 32,
+  "sortnum": 37,
   "pages": [
     {
       "type": "patchouli:spotlight",

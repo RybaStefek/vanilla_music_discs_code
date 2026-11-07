@@ -1,5 +1,6 @@
 package net.rybastefek.vanillamusicdiscs.block.custom;
 
+import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
@@ -7,24 +8,29 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.BaseEntityBlock;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.RenderShape;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityTicker;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.properties.BlockStateProperties;
-import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.phys.BlockHitResult;
-import net.minecraftforge.network.NetworkHooks;
+import net.minecraft.world.phys.shapes.VoxelShape;
 import net.rybastefek.vanillamusicdiscs.block.entity.ModBlockEntities;
 import net.rybastefek.vanillamusicdiscs.block.entity.custom.MusicDiscsTableBlockEntity;
 import org.jetbrains.annotations.Nullable;
 
 public class MusicDiscsTableBlock extends BaseEntityBlock {
-    public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
+    public static final VoxelShape SHAPE = Block.box(2, 0, 2, 14, 13, 14);
+    public static final MapCodec<MusicDiscsTableBlock> CODEC = simpleCodec(MusicDiscsTableBlock::new);
 
     public MusicDiscsTableBlock(Properties properties) {
         super(properties);
+    }
+
+    @Override
+    protected MapCodec<? extends BaseEntityBlock> codec() {
+        return CODEC;
     }
 
     @Override
@@ -39,15 +45,12 @@ public class MusicDiscsTableBlock extends BaseEntityBlock {
     }
 
     @Override
-    @SuppressWarnings("deprecation")
-    public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos,
-                                 Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
+    protected InteractionResult useWithoutItem(BlockState pState, Level pLevel, BlockPos pPos,
+                                               Player pPlayer, BlockHitResult pHit) {
         if (!pLevel.isClientSide()) {
             BlockEntity entity = pLevel.getBlockEntity(pPos);
-            if (entity instanceof MusicDiscsTableBlockEntity) {
-                NetworkHooks.openScreen((ServerPlayer) pPlayer, (MusicDiscsTableBlockEntity) entity, pPos);
-            } else {
-                throw new IllegalStateException("Our Container provider is missing!");
+            if (entity instanceof MusicDiscsTableBlockEntity blockEntity) {
+                pPlayer.openMenu(blockEntity, pPos);
             }
         }
         return InteractionResult.sidedSuccess(pLevel.isClientSide());

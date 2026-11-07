@@ -1,0 +1,8 @@
+{
+  "sound_event": "vanillamusicdiscs:floating_dream",
+  "description": {
+    "translate": "item.vanillamusicdiscs.floating_dream_music_disc.desc"
+  },
+  "length_in_seconds": 205.2,
+  "comparator_output": 15
+}

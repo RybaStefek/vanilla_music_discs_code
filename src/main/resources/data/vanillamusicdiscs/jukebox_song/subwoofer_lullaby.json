@@ -1,0 +1,8 @@
+{
+  "sound_event": "vanillamusicdiscs:subwoofer_lullaby",
+  "description": {
+    "translate": "item.vanillamusicdiscs.subwoofer_lullaby_music_disc.desc"
+  },
+  "length_in_seconds": 207.6,
+  "comparator_output": 15
+}

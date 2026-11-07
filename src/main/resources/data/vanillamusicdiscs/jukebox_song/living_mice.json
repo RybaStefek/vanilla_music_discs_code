@@ -1,0 +1,8 @@
+{
+  "sound_event": "vanillamusicdiscs:living_mice",
+  "description": {
+    "translate": "item.vanillamusicdiscs.living_mice_music_disc.desc"
+  },
+  "length_in_seconds": 163.1,
+  "comparator_output": 15
+}

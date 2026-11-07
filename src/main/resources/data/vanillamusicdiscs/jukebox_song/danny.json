@@ -1,0 +1,8 @@
+{
+  "sound_event": "vanillamusicdiscs:danny",
+  "description": {
+    "translate": "item.vanillamusicdiscs.danny_music_disc.desc"
+  },
+  "length_in_seconds": 241.15,
+  "comparator_output": 15
+}

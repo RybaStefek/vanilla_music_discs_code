@@ -2,7 +2,7 @@
   "name": "So Below",
   "category": "vanillamusicdiscs:discs",
   "icon": "vanillamusicdiscs:so_below_music_disc",
-  "sortnum": 30,
+  "sortnum": 35,
   "pages": [
     {
       "type": "patchouli:spotlight",
