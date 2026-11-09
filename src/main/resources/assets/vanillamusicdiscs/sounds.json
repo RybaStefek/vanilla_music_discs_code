@@ -55,6 +55,14 @@
       }
     ]
   },
+  "bounce": {
+    "sounds": [
+      {
+        "name": "vanillamusicdiscs:bounce",
+        "stream": true
+      }
+    ]
+  },
   "chris": {
     "sounds": [
       {
@@ -167,6 +175,14 @@
       }
     ]
   },
+  "flurry": {
+    "sounds": [
+      {
+        "name": "vanillamusicdiscs:flurry",
+        "stream": true
+      }
+    ]
+  },
   "floating_dream": {
     "sounds": [
       {
@@ -203,6 +219,14 @@
     "sounds": [
       {
         "name": "vanillamusicdiscs:labyrinthine",
+        "stream": true
+      }
+    ]
+  },
+  "lava_chicken": {
+    "sounds": [
+      {
+        "name": "vanillamusicdiscs:lava_chicken",
         "stream": true
       }
     ]
@@ -307,6 +331,14 @@
     "sounds": [
       {
         "name": "vanillamusicdiscs:taswell",
+        "stream": true
+      }
+    ]
+  },
+  "tears": {
+    "sounds": [
+      {
+        "name": "vanillamusicdiscs:tears",
         "stream": true
       }
     ]

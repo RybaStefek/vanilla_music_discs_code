@@ -19,6 +19,7 @@ public class ModSounds {
     public static final DeferredHolder<SoundEvent, SoundEvent> AXOLOTL = registerSoundEvent("axolotl");
     public static final DeferredHolder<SoundEvent, SoundEvent> BEGINNING = registerSoundEvent("beginning");
     public static final DeferredHolder<SoundEvent, SoundEvent> BEGINNING_2 = registerSoundEvent("beginning_2");
+    public static final DeferredHolder<SoundEvent, SoundEvent> BOUNCE = registerSoundEvent("bounce");
     public static final DeferredHolder<SoundEvent, SoundEvent> CHRIS = registerSoundEvent("chris");
     public static final DeferredHolder<SoundEvent, SoundEvent> CHRYSOPOEIA = registerSoundEvent("chrysopoeia");
     public static final DeferredHolder<SoundEvent, SoundEvent> CLARK = registerSoundEvent("clark");
@@ -33,11 +34,13 @@ public class ModSounds {
     public static final DeferredHolder<SoundEvent, SoundEvent> DRY_HANDS = registerSoundEvent("dry_hands");
     public static final DeferredHolder<SoundEvent, SoundEvent> EXCUSE = registerSoundEvent("excuse");
     public static final DeferredHolder<SoundEvent, SoundEvent> FIREBUGS = registerSoundEvent("firebugs");
+    public static final DeferredHolder<SoundEvent, SoundEvent> FLURRY = registerSoundEvent("flurry");
     public static final DeferredHolder<SoundEvent, SoundEvent> FLOATING_DREAM = registerSoundEvent("floating_dream");
     public static final DeferredHolder<SoundEvent, SoundEvent> HAGGSTROM = registerSoundEvent("haggstrom");
     public static final DeferredHolder<SoundEvent, SoundEvent> INFINITE_AMETHYST = registerSoundEvent("infinite_amethyst");
     public static final DeferredHolder<SoundEvent, SoundEvent> KEY = registerSoundEvent("key");
     public static final DeferredHolder<SoundEvent, SoundEvent> LABYRINTHINE = registerSoundEvent("labyrinthine");
+    public static final DeferredHolder<SoundEvent, SoundEvent> LAVA_CHICKEN = registerSoundEvent("lava_chicken");
     public static final DeferredHolder<SoundEvent, SoundEvent> LEFT_TO_BLOOM = registerSoundEvent("left_to_bloom");
     public static final DeferredHolder<SoundEvent, SoundEvent> LIVING_MICE = registerSoundEvent("living_mice");
     public static final DeferredHolder<SoundEvent, SoundEvent> MICE_ON_VENUS = registerSoundEvent("mice_on_venus");
@@ -51,6 +54,7 @@ public class ModSounds {
     public static final DeferredHolder<SoundEvent, SoundEvent> SUBWOOFER_LULLABY = registerSoundEvent("subwoofer_lullaby");
     public static final DeferredHolder<SoundEvent, SoundEvent> SWEDEN = registerSoundEvent("sweden");
     public static final DeferredHolder<SoundEvent, SoundEvent> TASWELL = registerSoundEvent("taswell");
+    public static final DeferredHolder<SoundEvent, SoundEvent> TEARS = registerSoundEvent("tears");
     public static final DeferredHolder<SoundEvent, SoundEvent> WENDING = registerSoundEvent("wending");
     public static final DeferredHolder<SoundEvent, SoundEvent> WET_HANDS = registerSoundEvent("wet_hands");
 

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "vanillamusicdiscs:lava_chicken_music_disc"
+        }
+      ]
+    }
+  ]
+}

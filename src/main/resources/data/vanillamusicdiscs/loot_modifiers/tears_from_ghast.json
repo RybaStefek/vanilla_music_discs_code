@@ -1,0 +1,27 @@
+{
+  "type": "neoforge:add_table",
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "minecraft:entities/ghast"
+    },
+    {
+      "condition": "minecraft:damage_source_properties",
+      "predicate": {
+        "direct_entity": {
+          "type": "minecraft:fireball"
+        },
+        "tags": [
+          {
+            "id": "minecraft:is_projectile",
+            "expected": true
+          }
+        ]
+      }
+    },
+    {
+      "condition": "minecraft:killed_by_player"
+    }
+  ],
+  "table": "vanillamusicdiscs:disc_drops/tears"
+}

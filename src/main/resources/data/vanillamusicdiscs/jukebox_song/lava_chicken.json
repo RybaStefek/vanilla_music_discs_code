@@ -1,0 +1,8 @@
+{
+  "sound_event": "vanillamusicdiscs:lava_chicken",
+  "description": {
+    "translate": "item.vanillamusicdiscs.lava_chicken_music_disc.desc"
+  },
+  "length_in_seconds": 135,
+  "comparator_output": 9
+}

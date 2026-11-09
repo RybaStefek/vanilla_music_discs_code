@@ -4,9 +4,9 @@ license="All rights reserved"
 
 [[mods]]
 modId="vanillamusicdiscs"
-version="2.0.4"
+version="2.0"
 displayName="Vanilla Music Discs"
-logoFile=""
+logoFile="logo.png"
 credits=""
 authors="RybaStefek"
 description="Mod about music discs"

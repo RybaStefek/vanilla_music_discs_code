@@ -21,6 +21,7 @@ public class ModItems {
     public static final DeferredHolder<Item, Item> AXOLOTL = registerDisc("axolotl_music_disc", "axolotl");
     public static final DeferredHolder<Item, Item> BEGINNING = registerDisc("beginning_music_disc", "beginning");
     public static final DeferredHolder<Item, Item> BEGINNING_2 = registerDisc("beginning_2_music_disc", "beginning_2");
+    public static final DeferredHolder<Item, Item> BOUNCE = registerDisc("bounce_music_disc", "bounce");
     public static final DeferredHolder<Item, Item> CHRIS = registerDisc("chris_music_disc", "chris");
     public static final DeferredHolder<Item, Item> CHRYSOPOEIA = registerDisc("chrysopoeia_music_disc", "chrysopoeia");
     public static final DeferredHolder<Item, Item> CLARK = registerDisc("clark_music_disc", "clark");
@@ -36,10 +37,12 @@ public class ModItems {
     public static final DeferredHolder<Item, Item> EXCUSE = registerDisc("excuse_music_disc", "excuse");
     public static final DeferredHolder<Item, Item> FIREBUGS = registerDisc("firebugs_music_disc", "firebugs");
     public static final DeferredHolder<Item, Item> FLOATING_DREAM = registerDisc("floating_dream_music_disc", "floating_dream");
+    public static final DeferredHolder<Item, Item> FLURRY = registerDisc("flurry_music_disc", "flurry");
     public static final DeferredHolder<Item, Item> HAGGSTROM = registerDisc("haggstrom_music_disc", "haggstrom");
     public static final DeferredHolder<Item, Item> INFINITE_AMETHYST = registerDisc("infinite_amethyst_music_disc", "infinite_amethyst");
     public static final DeferredHolder<Item, Item> KEY = registerDisc("key_music_disc", "key");
     public static final DeferredHolder<Item, Item> LABYRINTHINE = registerDisc("labyrinthine_music_disc", "labyrinthine");
+    public static final DeferredHolder<Item, Item> LAVA_CHICKEN = registerDisc("lava_chicken_music_disc", "lava_chicken");
     public static final DeferredHolder<Item, Item> LEFT_TO_BLOOM = registerDisc("left_to_bloom_music_disc", "left_to_bloom");
     public static final DeferredHolder<Item, Item> LIVING_MICE = registerDisc("living_mice_music_disc", "living_mice");
     public static final DeferredHolder<Item, Item> MICE_ON_VENUS = registerDisc("mice_on_venus_music_disc", "mice_on_venus");
@@ -53,6 +56,7 @@ public class ModItems {
     public static final DeferredHolder<Item, Item> SUBWOOFER_LULLABY = registerDisc("subwoofer_lullaby_music_disc", "subwoofer_lullaby");
     public static final DeferredHolder<Item, Item> SWEDEN = registerDisc("sweden_music_disc", "sweden");
     public static final DeferredHolder<Item, Item> TASWELL = registerDisc("taswell_music_disc", "taswell");
+    public static final DeferredHolder<Item, Item> TEARS = registerDisc("tears_music_disc", "tears");
     public static final DeferredHolder<Item, Item> WENDING = registerDisc("wending_music_disc", "wending");
     public static final DeferredHolder<Item, Item> WET_HANDS = registerDisc("wet_hands_music_disc", "wet_hands");
 

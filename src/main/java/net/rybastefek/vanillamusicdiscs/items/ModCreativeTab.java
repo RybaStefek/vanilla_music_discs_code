@@ -2,19 +2,27 @@ package net.rybastefek.vanillamusicdiscs.items;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.rybastefek.vanillamusicdiscs.VanillaMusicDiscs;
 import net.rybastefek.vanillamusicdiscs.block.ModBlocks;
-import vazkii.patchouli.api.PatchouliAPI;
 
 public class ModCreativeTab {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, VanillaMusicDiscs.MOD_ID);
+
+    public static void addVanillaCreativeTab(BuildCreativeModeTabContentsEvent event) {
+        if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+            event.accept(ModItems.BOUNCE.get());
+            event.accept(ModItems.FLURRY.get());
+            event.accept(ModItems.LAVA_CHICKEN.get());
+            event.accept(ModItems.TEARS.get());
+        }
+    }
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> VANILLA_MUSIC_DISCS_TAB =
             CREATIVE_MODE_TABS.register("vanilla_music_discs_tab",
@@ -70,5 +78,6 @@ public class ModCreativeTab {
 
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TABS.register(eventBus);
+        eventBus.addListener(ModCreativeTab::addVanillaCreativeTab);
     }
 }
